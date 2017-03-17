@@ -2,3 +2,6 @@
 Dockerfile
 feature
 container
+*_new*
+/noVNC
+jekyll-bootstrap

@@ -19,6 +19,12 @@ as taken from http://docs.python.org/dev/library/ssl.html#certificates
 import os, sys, time, errno, signal, socket, select, logging
 import array, struct
 from base64 import b64encode, b64decode
+try:
+    from urllib.parse import parse_qs, urlparse
+except:
+    from cgi import parse_qs
+    from urlparse import urlparse
+from records import *
 
 # Imports that vary by python version
 
@@ -99,7 +105,10 @@ class WebSocketRequestHandler(SimpleHTTPRequestHandler):
         self.verbose = getattr(server, "verbose", False)
         self.daemon = getattr(server, "daemon", False)
         self.record = getattr(server, "record", False)
+        self.record_dir = getattr(server, "record_dir", "recordings/")
+        self.record_list = getattr(server, "record_list", "records.js")
         self.run_once = getattr(server, "run_once", False)
+        self.public = getattr(server, "public", False)
         self.rec        = None
         self.handler_id = getattr(server, "handler_id", False)
         self.file_only = getattr(server, "file_only", False)
@@ -395,8 +404,8 @@ class WebSocketRequestHandler(SimpleHTTPRequestHandler):
                 else:
                     recbuf = buf[frame['hlen']:frame['hlen'] +
                                                frame['length']]
-                self.rec.write("%s,\n" %
-                        repr("}%s}" % tdelta + recbuf))
+                #self.rec.write("%s,\n" %
+                #        repr("}%s}" % tdelta + recbuf))
 
 
             bufs.append(frame['payload'])
@@ -515,17 +524,56 @@ class WebSocketRequestHandler(SimpleHTTPRequestHandler):
             if self.path != '/':
                 self.log_message("%s: Path: '%s'", client_addr, self.path)
 
+            args = parse_qs(urlparse(self.path)[4]) # 4 is the query from url
+
+            record_title = ""
+            record_author = ""
+            record_tags = ""
+            record_desc = ""
+
+            if 'record' in args and len(args['record']):
+                record = args['record'][0].rstrip('\n')
+		record_file = ""
+                if record == "1":
+		    for r in ('file', 'title', 'author', 'tags', 'desc'):
+                        if ('record_%s' % r) in args and len(args['record_%s' % r]):
+                            exec("record_%s = args['record_%s'][0].replace('\\n', '')" % (r, r))
+
+		if record_file:
+		    self.record = record_file
+                elif not self.record:
+		    self.record = ""
+
+		create_time = time.strftime("%Y%m%d%H%M%S", time.gmtime(time.time()))
+		if self.record:
+                    self.record = "%s.%s.%s.novnc" % (self.record, create_time, self.handler_id)
+		else:
+                    self.record = "%s.%s.novnc" % (create_time, self.handler_id)
+                self.record = os.path.abspath(self.record_dir + self.record)
+
             if self.record:
+                self.log_message("Recording to '%s.*'", self.record)
+
                 # Record raw frame data as JavaScript array
-                fname = "%s.%s" % (self.record,
-                                   self.handler_id)
-                self.log_message("opening record file: %s", fname)
-                self.rec = open(fname, 'w+')
-                encoding = "binary"
-                if self.base64: encoding = "base64"
-                self.rec.write("var VNC_frame_encoding = '%s';\n"
-                               % encoding)
-                self.rec.write("var VNC_frame_data = [\n")
+                t = time.time()
+                record_create = "%r" % t
+
+                if not os.path.exists(self.record_dir):
+                    os.makedirs(self.record_dir)
+
+                self.log_message("opening record file: %s", self.record)
+                self.rec = open(self.record, 'w+')
+                record_encoding = "binary"
+                if self.base64: record_encoding = "base64"
+
+		record_header = '';
+
+		for r in ('create', 'title', 'author', 'tags', 'desc', 'encoding'):
+		    v = eval('record_%s' % r)
+		    if v:
+                        record_header += "var VNC_frame_%s = '%s';\n" % (r, v)
+
+                self.rec.write(record_header + "var VNC_frame_data = [\n")
 
             try:
                 self.new_websocket_client()
@@ -566,10 +614,23 @@ class WebSocketRequestHandler(SimpleHTTPRequestHandler):
         else:
             SimpleHTTPRequestHandler.do_HEAD(self)
 
+    def compare(self, x, y):
+        stat_x = os.stat(self.record_dir + "/" + x)
+        stat_y = os.stat(self.record_dir + "/" + y)
+        if (stat_x.st_ctime > stat_y.st_ctime):
+            return -1
+        elif (stat_x.st_ctime > stat_y.st_ctime):
+            return 1
+        else:
+            return 0
+
     def finish(self):
         if self.rec:
             self.rec.write("'EOF'];\n")
             self.rec.close()
+
+            Records(record_dir = self.record_dir, action = ('remove_raw', 'zb64', 'slice')).generate()
+            self.log_message("create " + self.record_dir + self.record_list);
 
     def handle(self):
         # When using run_once, we have a single process, so
@@ -604,9 +665,9 @@ class WebSocketServer(object):
     def __init__(self, RequestHandlerClass, listen_host='',
                  listen_port=None, source_is_ipv6=False,
             verbose=False, cert='', key='', ssl_only=None,
-            daemon=False, record='', web='',
+            daemon=False, record='', record_dir='recordings/', record_list='records.js', web='',
             file_only=False,
-            run_once=False, timeout=0, idle_timeout=0, traffic=False,
+            run_once=False, public=False, timeout=0, idle_timeout=0, traffic=False,
             tcp_keepalive=True, tcp_keepcnt=None, tcp_keepidle=None,
             tcp_keepintvl=None, auto_pong=False, strict_mode=True):
 
@@ -619,11 +680,14 @@ class WebSocketServer(object):
         self.ssl_only       = ssl_only
         self.daemon         = daemon
         self.run_once       = run_once
+        self.public         = public
         self.timeout        = timeout
         self.idle_timeout   = idle_timeout
         self.traffic        = traffic
         self.file_only      = file_only
         self.strict_mode    = strict_mode
+        self.record_dir     = record_dir
+        self.record_list    = record_list
 
         self.launch_time    = time.time()
         self.ws_connection  = False
@@ -644,7 +708,14 @@ class WebSocketServer(object):
         if web:
             self.web = os.path.abspath(web)
         if record:
-            self.record = os.path.abspath(record)
+            self.record = os.path.basename(record)
+            tmp = os.path.dirname(record)
+            if tmp:
+                self.record_dir = tmp + "/"
+            else:
+                self.record_dir = record_dir + "/"
+            self.record = os.path.abspath(self.record_dir + self.record)
+            self.record_list = record_list
 
         if self.web:
             os.chdir(self.web)
