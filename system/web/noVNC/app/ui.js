@@ -170,6 +170,7 @@ var UI;
             UI.initSetting('record_file', '');
             UI.initSetting('record_title', '');
             UI.initSetting('record_author', '');
+            UI.initSetting('record_category', '');
             UI.initSetting('record_tags', '');
             UI.initSetting('record_desc', '');
         },
@@ -419,6 +420,7 @@ var UI;
             document.getElementById('noVNC_setting_record_file').disabled = UI.connected;
             document.getElementById('noVNC_setting_record_title').disabled = UI.connected;
             document.getElementById('noVNC_setting_record_author').disabled = UI.connected;
+            document.getElementById('noVNC_setting_record_category').disabled = UI.connected;
             document.getElementById('noVNC_setting_record_tags').disabled = UI.connected;
             document.getElementById('noVNC_setting_record_desc').disabled = UI.connected;
             document.getElementById('noVNC_setting_path').disabled = UI.connected;
@@ -762,6 +764,7 @@ var UI;
             UI.saveSetting('record_file');
             UI.saveSetting('record_title');
             UI.saveSetting('record_author');
+            UI.saveSetting('record_category');
             UI.saveSetting('record_tags');
             UI.saveSetting('record_desc');
 
@@ -983,6 +986,7 @@ var UI;
             var record_file = document.getElementById('noVNC_setting_record_file').value;
             var record_title = document.getElementById('noVNC_setting_record_title').value;
             var record_author = document.getElementById('noVNC_setting_record_author').value;
+            var record_category = document.getElementById('noVNC_setting_record_category').value;
             var record_tags = document.getElementById('noVNC_setting_record_tags').value;
             var record_desc = document.getElementById('noVNC_setting_record_desc').value;
             var path = document.getElementById('noVNC_setting_path').value;
@@ -1001,6 +1005,9 @@ var UI;
                 }
                 if (record_author) {
                     path = WebUtil.injectParamIfMissing(path, "record_author", record_author);
+                }
+                if (record_category) {
+                    path = WebUtil.injectParamIfMissing(path, "record_category", record_category);
                 }
                 if (record_tags) {
                     path = WebUtil.injectParamIfMissing(path, "record_tags", record_tags);

@@ -526,16 +526,14 @@ class WebSocketRequestHandler(SimpleHTTPRequestHandler):
 
             args = parse_qs(urlparse(self.path)[4]) # 4 is the query from url
 
-            record_title = ""
-            record_author = ""
-            record_tags = ""
-            record_desc = ""
+	    for r in ('title', 'author', 'category', 'tags', 'desc'):
+                exec("record_%s = ''" % r)
 
             if 'record' in args and len(args['record']):
                 record = args['record'][0].rstrip('\n')
 		record_file = ""
                 if record == "1":
-		    for r in ('file', 'title', 'author', 'tags', 'desc'):
+		    for r in ('file', 'title', 'author', 'category', 'tags', 'desc'):
                         if ('record_%s' % r) in args and len(args['record_%s' % r]):
                             exec("record_%s = args['record_%s'][0].replace('\\n', '')" % (r, r))
 
