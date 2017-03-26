@@ -542,12 +542,14 @@ class WebSocketRequestHandler(SimpleHTTPRequestHandler):
                 elif not self.record:
 		    self.record = ""
 
-		create_time = time.strftime("%Y%m%d%H%M%S", time.gmtime(time.time()))
+                t = time.gmtime(time.time())
+		create_time = time.strftime("%Y%m%d%H%M%S", t)
+                record_dir = time.strftime("%Y-%m-%d", t)
 		if self.record:
                     self.record = "%s.%s.%s.novnc" % (self.record, create_time, self.handler_id)
 		else:
                     self.record = "%s.%s.novnc" % (create_time, self.handler_id)
-                self.record = os.path.abspath(self.record_dir + self.record)
+                self.record = os.path.abspath(self.record_dir + '/' + record_dir + '/' + self.record)
 
             if self.record:
                 self.log_message("Recording to '%s.*'", self.record)
@@ -556,8 +558,9 @@ class WebSocketRequestHandler(SimpleHTTPRequestHandler):
                 t = time.time()
                 record_create = "%r" % t
 
-                if not os.path.exists(self.record_dir):
-                    os.makedirs(self.record_dir)
+                record_dir = os.path.dirname(self.record)
+                if not os.path.exists(record_dir):
+                    os.makedirs(record_dir)
 
                 self.log_message("opening record file: %s", self.record)
                 self.rec = open(self.record, 'w+')

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#-*-coding:utf-8-*-
 #
 # generate-records.py -- generate records.js for noVNC recordings in /noVNC/recordings/
 #
@@ -29,9 +30,10 @@ def main():
         www_dir = sys.argv[3]
 
     if not record_dir:
-        record_dir = mypath + "../../../../../../../" + "noVNC/recordings/"
+        record_dir = mypath + "../" + "recordings/"
     if not www_dir:
-        www_dir = mypath + "../../../../../../../" + "noVNC/"
+        www_dir = mypath + "../"
+
     record_dir = os.path.abspath(record_dir) + "/"
     www_dir = os.path.abspath(www_dir) + "/"
 
@@ -39,6 +41,8 @@ def main():
 	action = ('remove', 'remove_raw')
     elif action == 2:
 	action = ('restore_raw')
+    elif action == 3:
+	action = ('remove_raw', 'zb64', 'slice', 'md')
     else:
 	action = ('remove_raw', 'zb64', 'slice')
 

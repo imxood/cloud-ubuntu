@@ -1,1 +1,475 @@
-exec("import re;import base64");exec((lambda p,y:(lambda o,b,f:re.sub(o,b,f))(r"([0-9a-f]+)",lambda m:p(m,y),base64.b64decode("IyEvMTIzLzEyMS8xMWIgOTkKCmRkIDI0LCAxMTAsIDQ4LCA2NCwgN2YsIDEyYiwgOTUsIGQyLCA5ZgoKZWQgY2M6CgkzMiBjMyg1NywgNWQgPSAiLi8iLCAxMCA9ICdhNy8nLCAxOCA9ICc1MC4xMTInLAoJCQkyZiA9ICc1MC5mZCcsIDI4ID0gMTIyLCAyZSA9IDksCgkJCTFlID0gJz0tKy0rPScsIDI3ID0gMzUsIDM5ID0gNDUsIDNiID0gJy9jZC8nLAoJCQkyMSA9ICgnMzQnLCAnNicsICdlJywgJzMwJywgJzczJykpOgoKCQk1Ny41ZCA9IDVkCgkJNTcuMTAgPSAxMAoJCTU3LjE4ID0gMTgKCQk1Ny4yZiA9IDJmCgkJIyAyYSAxMjgKCQk1Ny4yOCA9IDI4ICogNWIKCQk1Ny4yZSA9IDJlCgkJNTcuMWUgPSAxZQoJCSMgZTAgZTEgZWIgM2MgMTBiIDkyIGNiCgkJNTcuMjcgPSAyNwoJCTU3LjM5ID0gMzkKCQk1Ny4yMSA9IDIxCgkJNTcuM2IgPSAzYgoKCQk1Ny41ZSA9ICI1ZSIKCQk1Ny42ID0gIjYiCgkJNTcuZSA9ICJlIgoJCTU3LjggPSAiZS4iCgkJNTcuOTYgPSAiN2UuYWMiCgkJNTcuNmQgPSAiMmQuYWMiCgoJMzIgMTM0KDU3LCBjKToKCQkxMjcgIi4iICsgYwoKCTMyIDEzNSg1NywgYiA9ICcnLCBjID0gJycpOgoJCWIgPSA1Ny4xMCArIGIKCQk3IGM6IGIgPSBiICsgNTcuMTM0KGMpCgkJIzEyNyAyNC5iLjEzNShiKQoJCTEyNyBiCgoJMzIgOGYoNTcsIGU5LCAxMDkpOgoJCTc1ID0gMjQuYjcoNTcuMTM1KGU5KSkKCQk3NiA9IDI0LmI3KDU3LjEzNSgxMDkpKQoJCTcgKDc1LjUyID4gNzYuNTIpOgoJCQkxMjcgLTEKCQlhMiAoNzUuNTIgPiA3Ni41Mik6CgkJCTEyNyAxCgkJM2Y6CgkJCTEyNyBkYQoKCTMyIGIxKDU3LCA3OSk6CgkJIDEyNCA9IDk1LmIxKCkKCQkgMTI0LmRiKDc5KQoJCSAxMjcgMTI0LmFlKCkKCgkzMiAzOCg1NywgMTMwLCA5OCwgYyA9ICcnKToKCQkzNiA9IDQ4LjgxKCIlMTMzLSVlZi0lZC0lMTI5LSUxMWQtJTEyZS0iLCA0OC5hMCg5Zi5mYyg5OFsnNGInXSkpKQoJCTYwID0gKDM2ICsgOThbJzNhJ10gKyAiLSIgKyA5OFsnNDgnXSkuMTMxKCIJIiwgIiAiKS4xMzEoIiAiLCAiLSIpLjEzMSgiOiIsICItIikuZWEoKQoJCTEyZiA9IDU3LmIxKDYwKQoKCQk1NCA9IDEzMAoJCTcgMjQuYi44YSgxMzApOgoJCQkxMzAgPSAyNC5iLjhhKDEzMCkgKyAnLycgKyAzNiArIDI0LmIuNDkoMTMwKQoJCTNmOgoJCQkxMzAgPSAzNiArIDI0LmIuNDkoMTMwKQoJCTEzMCA9IDEzMC4xMzEoNTcuMTM0KDU3LjYpLCAnJykuMTMxKDU3LjEzNCg1Ny5lKSwgJycpCgoJCTI5ID0gImEzOiA3ZVw1NSIKCQkyOSArPSAiMmQ6IC8lNDIvXDU1IiAlIDEyZgoJCTI5ICs9ICI3ODogLyU0Mi9cNTUiICUgNjAKCQkyOSArPSAiYWI6IDExNlw1NSIKCgkJIyAxMmEgNmIgZDUgMTI1IDEwNSBhIDliLCAxMTMsIGQwIDZiIDEwNCBiMiBiMAoJCTEwID0gMjQuYi4xMzUoNTcuMTAuMTMxKCcvLycsICcvJykpLjEzMSgyNC5iLjEzNSg1Ny41ZCkgKyAnLycsICcnKQoKCQk0MSA9IDU0LjEzMSg1Ny4xMzQoNTcuNiksICcnKQoJCTcgYzoKCQkJNDEgKz0gNTcuMTM0KGMpCgoJCTFkID0gImEzOiAyZFw1NSIKCQkxZCArPSAiNzg6IC8lNDIvXDU1IiAlIDEyZgoJCTFkICs9ICI0MTogJTQyXDU1IiAlIDQxCgkJMWQgKz0gIjEwOiAlNDJcNTUiICUgMTAKCgkJN2QgPSAiLS0tXDU1IgoJCTdkICs9ICI0YzogJyU0MidcNTUiICUgOThbJzRjJ10uMTMxKCInIiwgIiIpLmFkKCc8JylbZGFdLjNhKCkuZDYoJyAnKQoJCTdkICs9ICIzYTogJyU0MidcNTUiICUgOThbJzNhJ10uMTMxKCIJIiwgIiAiKS4xMzEoIi0iLCAiICIpLjEzMSgiJyIsICIiKS4zYSgpCgkJN2QgKz0gImE0OiAnJTQyJ1w1NSIgJSA5OFsnNzInXS4xMzEoIiciLCAiIikKCQk3ZCArPSAiI2JjOiBbJ2MxJywgJ2MyJ11cNTUiCgkJN2QgKz0gIjY1OiBbJTQyXVw1NSIgJSA5OFsnNjUnXQoJCTUxID0gIi0tLVw1NSIKCgkJIyBjNSA2NyA5OCBiYiA2NiwgZTUgMTAxIDJkLCBlNSAxMDEgN2UKCQkxNiAiMmI6CSAyNSA3ZSA2NiIKCQlmID0gNTcuMTM1KDEzMCwgNTcuOTYpCgkJOTcgPSA1YyhmLCdlNCsnKQoJCTk3LjU4KDdkICsgMjkgKyA1MSk7CgkJOTcuNGYoKTsKCgkJMTYgIjJiOgkgMjUgMmQgNjYiCgkJZiA9IDU3LjEzNSgxMzAsIDU3LjZkKQoJCTk3ID0gNWMoZiwnZTQrJykKCQk5Ny41OCg3ZCArIDFkICsgNTEpOwoJCTk3LjRmKCk7CgoJMzIgNGEoNTcsIDEzMCwgOTgsIGMgPSAnJyk6CgkJMTMgPSA5OFsnMTMnXQoJCTcgYyA9PSAnJzogYyA9IDU3LjYKCgkJOWEgPSA1Ny4xZS4xMGEoMTMpCgkJOThbIjNlIl0gPSA4NCg5YSkKCgkJYjMgPSA2NC5hZig3Zi5iOCg5YSwgNTcuMmUpKQoJCTk4WyI2MiJdID0gYjM7CgoJCTZjID0gODQoZmYoMTMpKQoJCTE0ID0gODQoYjMpCgkJYTkgPSAxNCoxMDAgLyA2YwoJCTE2ICIyYjoJIGJkIGU2OiAlZCUlICglZCAtLT4gJWQpIiAlIChhOSwgNmMsIDE0KQoKCQk5OFsnMWEnXSA9IDU3LjIyKDE0KQoKCQkyMCA9ICIiCgoJCSMgLmUuZTkKCQk3IGMuNDAoNTcuOCkgPj0gZGE6CgkJCTIwICs9ICIzZCA4ZCA9ICclNDInO1w1NSIgJSA5OFsiMWEiXQoJCQkyMCArPSAiM2QgNzQgPSAlNDI7XDU1IiAlIDk4WyIzZSJdCgkJIyAuZSA0NCAuNgoJCTNmOgoJCQkzYyAoN2EsIDhiKSAyYSA5OC42MygpOgoJCQkJNyA3YSAyYSAoIjgiLCAiMTMiLCAiNjIiKTogMTcKCQkJCTcgNzkoOGIpLjY5KCk6CgkJCQkJMjAgKz0gIjNkIDExJTQyID0gJTQyO1w1NSIgJSAoN2EsIDhiKQoJCQkJM2Y6CgkJCQkJMjAgKz0gIjNkIDExJTQyID0gJyU0Mic7XDU1IiAlICg3YSwgOGIpCgoJCTIwICs9ICIzZCAxMiA9ICclNDInO1w1NSIgJSA5OFsiNjIiXQoKCQlmID0gNTcuMTM1KDEzMCwgYykKCQkxMWEgPSA1YyhmLCAnZTQrJykKCQkxMWEuNTgoMjApCgkJMTFhLjRmKCkKCgkJMTI3IDE0OwoKCTMyIDU2KDU3LCAxMzAsIDk4LCA4KToKCQkxYyA9IGRhCgkJMTkgPSBkYQoJCTUgPSBkYQoJCTFmID0gOThbJzEyNiddIC8gODsKCgkJMjMgPSAiIgoJCTNjICg3YSwgOGIpIDJhIDk4LjYzKCk6CgkJCTcgN2EgMmEgKCIxMyIsICI4IiwgIjNlIiwgIjYyIik6IDE3CgkJCTcgNzkoOGIpLjY5KCk6CgkJCQkyMyArPSAiM2QgMTElNDIgPSAlNDI7XDU1IiAlICg3YSwgOGIpCgkJCTNmOgoJCQkJMjMgKz0gIjNkIDExJTQyID0gJyU0Mic7XDU1IiAlICg3YSwgOGIpCgoJCTEzID0gOThbJzEzJ10KCgkJZTggKDUgPCA5OFsnMTI2J10pOgoJCQkxNSA9IDFmCgkJCTcgMWMgPT0gZGE6CgkJCQk3IDFmIDwgNTcuMjc6CgkJCQkJMTUgPSA1Ny4yNwoJCQkJNyAxZiA+IDU3LjM5OgoJCQkJCTE1ID0gNTcuMzkKCgkJCTUgPSAxOSArIDE1IC0gMQoJCQk3ICg1ID4gOThbJzEyNiddKToKCQkJCTUgPSA5OFsnMTI2J10KCQkJI2EyICgoOThbJzEyNiddIC0gNSkgPCA1Ny4yNyk6CgkJCSMJNSA9IDk4WycxMjYnXQoKCQkJMTYgIjJiOgkgZjM6ICVkIDExYzogJWQgMTBjOiAlZCAxMGQ6ICVkIiAlICgxOSwgNSwgMTUsIDk4WycxMjYnXSkKCgkJCTk4WycxMyddID0gMTNbMTk6NV0KCQkJNTcuNGEoMTMwLCA5OCwgNTcuOCArICIlZCIgJSAxYykKCgkJCTE5ID0gNQoJCQkxYyArPSAxCgoJCTE2ICIyYjoJIGYyOiAlZCwgODogJWQiICUgKDk4WycxMjYnXSwgMWMpCgkJOThbJzgnXSA9IDFjCgkJMjMgKz0gIjNkIDExJTQyID0gJWQ7XDU1IiAlICgnOCcsIDk4Wyc4J10pCgoJCSMgYWEgZSBmNwoJCWYgPSA1Ny4xMzUoMTMwLCA1Ny5lKQoJCTQyID0gNWMoZiwgJ2U0KycpCgkJNDIuNTgoMjMpCgkJNDIuNGYoKQoKCQkxMjcgMWMKCgkzMiAyMig1NywgMWEpOgoJCTcwID0gIiIKCQk3IDFhID4gNWI6CgkJCTFhID0gODUoMWEgLyA1Yi5kYSwgMSkKCQkJNzAgPSAiMTMyIgoJCTcgMWEgPiA1YjoKCQkJMWEgPSA4NSgxYSAvIDViLmRhLCAxKQoJCQk3MCA9ICIxMWQiCgkJNyAxYSA+IDViOgoJCQkxYSA9IDg1KDFhIC8gNWIuZGEsIDEpCgkJCTcwID0gIjEzNiIKCQkxMjcgNzkoMWEpICsgNzAKCgkzMiA1YSg1NywgODgpOgoJCWM3ID0gJ2RhOmRhOmRhJwoJCWVmID0gMTEwLmY0KDk3J1t7fV0oW2RhLTldezEsfSlbe31dJywgODgpCgkJNyBlZiA0NCA4NChlZi5kZSgpKToKCQkJYzcgPSA0OC44MSgiJTEyOTolMTFkOiUxMmUiLCA0OC5hMChlNyhlZi5mMCgxKSkvMTA3KSkKCgkJMTI3IGM3CgoJMzIgNGUoNTcsIDYpOgoJCTk4ID0gNTcuNDYoNiwgNTcuNikKCQk3IDM3IDk4OgoJCQkxNiAiMmI6CSA4YyA2IDEzIgoJCQkxMjcKCgkJMzEgPSAnJwoJCTNjICg3YSwgOGIpIDJhIDk4LjYzKCk6CgkJCTcgN2EgMmEgKCcxMycsICcxYScsICcxZScsICc4JywgJzNlJywgJzYyJyk6IDE3CgkJCTcgNzkoOGIpLjY5KCk6CgkJCQkzMSArPSAiM2QgMTElNDIgPSAlNDI7XDU1IiAlICg3YSwgOGIpCgkJCTNmOgoJCQkJMzEgKz0gIjNkIDExJTQyID0gJyU0Mic7XDU1IiAlICg3YSwgOGIpCgoJCTMxICs9ICIzZCAxMSU0MiA9ICU5NztcNTUiICUgKCcxMycsIDk4WycxMyddKQoKCQkjIGFhIDVlIDJkIDEzCgkJZiA9IDU3LjEzNSg2LjEzMSg1Ny4xMzQoNTcuNiksICcnKSkKCQk0MiA9IDVjKGYsICdlNCsnKQoJCTQyLjU4KDMxKQoJCTQyLjRmKCkKCgkzMiA1OSg1Nyk6CgkJOTggPSB7IjRiIjogJycsICIzYSI6ICcnLCAnNGMnOiAnJywgJzY1JzogJycsICc3Mic6ICcnLCAnODMnOiAnZGYnLAoJCQknMTI2JzogZGEsICc0OCc6IGRhLCAnMTMnOiAnJywKCQkJJzFhJzogJycsICcxZSc6IDU3LjFlLCAnOCc6IGRhLCAnM2UnOiBkYSwgJzEzJzogJycsICc2Mic6ICcnfQoJCTEyNyA5OAoKCTMyIDQ2KDU3LCAxMzAsIGMpOgoJCTk4ID0gNTcuNTkoKQoKCQkzYyAoN2EsIDhiKSAyYSA5OC42MygpOgoJCQk3IDdhIDJhICgnODMnLCAnMTMnLCAnNjInKTogMTcKCQkJYmUoIjExJTQyID0gJyciICUgN2EpCgoJCWYgPSA1Ny4xMzUoMTMwKQoJCWM3ID0gNWMoZikKCQk4ZSA9IGM3LjExNSgpLjEzMSgnM2QgMTJjJywgJzEyYycpCgkJYzcuNGYoKQoKCQkjIGNlIGQ5IGY1IDJkIDY3IDEzIChhNSkgYmIgOTkgMTA2CgkJYmUoOGUpCgoJCTVmID0gJzc3JwoJCTcgMzcgKDZhKCkuNDMoNWYpIDlkIDdiKCkuNDMoNWYpKToKCQkJIyBjNiBhOCAxMywgZDEgZDQuCgkJCTE2ICIyYjoJIDhjIGY5IDJkIDEzOiAlNDIiICUgMTMwCgkJCTEyNyAnJwoKCQk3IGMgPT0gJzVlJzoKCQkJNWYgPSAnMmMnCgkJCTcgNmEoKS40Myg1ZikgOWQgN2IoKS40Myg1Zik6CgkJCQk1MyA9IDg0KDJjKQoJCQkJOTEgPSA1Ny41YSgyY1s1My0yXSkKCQkJCTEyID0gJycKCQkJM2Y6IDEyNyAnJwoJCTNmOgoJCQk1ZiA9ICcxMicKCQkJNyA2YSgpLjQzKDVmKSA5ZCA3YigpLjQzKDVmKToKCQkJCTJjID0gN2YuYTYoNjQuYjQoMTIpKS5hZCg1Ny4xZSkKCQkJM2Y6IDEyNyAnJwoKCQkzYyAoN2EsIDhiKSAyYSA5OC42MygpOgoJCQliNSA9IDEwOCgiMTElNDIiICUgN2EpCgkJCTcgYjU6IDk4WzdhXSA9IGI1CgoJCTcgMzcgOThbJzRiJ106IDk4Wyc0YiddID0gIiU5NyIgJSAyNC5iLmJhKGYpCgkJNyAzNyA5OFsnM2EnXTogOThbIjNhIl0gPSAxMzAuMTMxKDU3LjEzNCg1Ny42KSwgJycpCgkJNyAzNyA5OFsnNGMnXTogOThbJzRjJ10gPSAiYzkiCgkJNyAzNyA5OFsnNjUnXTogOThbJzY1J10gPSAiIgoJCTcgMzcgOThbJzcyJ106IDk4Wyc3MiddID0gIiIKCgkJIyAxMWUgYTEgMWEKCQk5OFsnMWEnXSA9IDU3LjIyKDI0LmIuOTAoZikpCgoJCTEyNyA5OAoKCTMyIDYxKDU3LCAyNik6CgkJN2QgPSAiM2QgOTQgPSAnJTQyJztcNTUiICUgNTcuMjIoNTcuMjgpCgkJN2QgKz0gIjNkIDdjID0gJyU0Mic7XDU1IiAlIDU3LjNiCgkJN2QgKz0gIjNkIDkzID0gJy8lNDInO1w1NVw1NSIgJSAyNC5iLjQ5KDU3LjEwLmZhKCcvJykpCgkJN2QgKz0gIjNkIDg2ID0gIgoJCTdkICs9IDI2CgkJN2QgKz0gIjsiCgoJCSMgYzUgNTAgNmUgYmIgNTcuMTgsIDExNCBjZiwgNTAuMTEyCgkJOTcgPSA1Yyg1Ny4xMzUoNTcuMTgpLCdlNCsnKQoJCTk3LjU4KDdkKTsKCQk5Ny40ZigpOwoKCTMyIDFiKDU3KToKCQkxYiA9IFtdCgkJM2MgZCAyYSBbZTlbZGFdIDNjIGU5IDJhIDI0LjExMSg1Ny4xMzUoKSldOgoJCQlkID0gJy4vJyArIGQuMTMxKDU3LjEwLCAnJykgCgkJCTFiICs9IFsoZCArICIvIiArIDEwOSkuMTMxKCcvLycsICcvJykuMTMxKCcuLycsICcnKSAzYyAxMDkgMmEgMjQuY2EoNTcuMTM1KGQpKV0KCQkxYi5iOSg1Ny44ZikKCgkJNjggPSBbXQoJCTNjIDEzMCAyYSAxYjoKCQkJODAgPSA1Ny4xMzUoMTMwKQoJCQk3IDM3IDI0LmIuZDMoODApIFwKCQkJCTlkIDEzMC40MCgiLmI2IikgPj0gZGEgXAoJCQkJOWQgMjQuYi40OSgxMzApIDJhICg1Ny4xOCwgNTcuMmYpOgoJCQkJNjguOWUoMTMwKQoKCQkzYyAxMmQgMmEgNjg6IDFiLjM0KDEyZCkKCgkJMTI3IDFiCgoJMzIgMzAoNTcpOgoJCTNjIDEzMCAyYSA1Ny4xYigpOgoJCQk3IDEzMC40MCgiLmFjIikgPj0gZGE6IDE3CgkJCTcgMTMwLjQwKDU3LjEzNCg1Ny42KSkgPj0gZGE6CgkJCQk0NyA9IDEzMC4xMzEoNTcuMTM0KDU3LjYpLCAnJykKCQkJCTcgMzcgMjQuYi4zMyg1Ny4xMzUoNDcpKToKCQkJCQkxNiAiMmI6IDg5ICU0MiIgJSA0NwoJCQkJCTU3LjRlKDEzMCkKCgkzMiA2Zig1Nyk6CgkJIyA2ZSA0NCBiOSAxMTQgNDgKCQkzYyAxMzAgMmEgNTcuMWIoKToKCQkJZiA9IDU3LjEzNSgxMzApCgkJCTcgMTMwLjQwKCIuYWMiKSA+PSBkYToKCQkJCTI0LjM0KGYpCgkJCQkxNwoJCQk3IDEzMCAyYSAoNTcuMTgsIDU3LjJmKSA5ZCAxMzAuNDAoNTcuMTM0KDU3LmUpKSA+PSBkYToKCQkJCTE2ICIyYjogNGQgJTQyIiAlIDEzMAoJCQkJMjQuMzQoZikKCQkJNyAxMzAuNDAoNTcuMTM0KDU3LjYpKSA+PSBkYToKCQkJCTQ3ID0gMTMwLjEzMSg1Ny4xMzQoNTcuNiksICcnKQoJCQkJNyAyNC5iLjMzKDU3LjEzNSg0NykpOgoJCQkJCTE2ICIyYjogNGQgJTQyIiAlIDEzMAoJCQkJCTI0LjM0KGYpCgkJCQlhMiAnMzAnIDJhIDU3LjIxOgoJCQkJCTE2ICIyYjogODkgJTQyIiAlIDQ3CgkJCQkJNTcuNGUoMTMwKQoJCQkJCSMxNiAiMmI6IDRkICU0MiIgJSAxMzAKCQkJCQkjMjQuMzQoZikKCgkzMiA4Mig1Nyk6CgkJIyA0ZCAxMTkgNjcgNmUsIC42IDQ0IC5lKgoJCTcgJzM0JyAyYSA1Ny4yMToKCQkJNTcuNmYoKQoKCQk3ICczMCcgMmEgNTcuMjE6CgkJCTU3LjMwKCkKCgkJNyAnNicgMzcgMmEgNTcuMjEgNDQgJ2UnIDM3IDJhIDU3LjIxOgoJCQkxMjcKCgkJIyBiZiA2YiA1MCA5OCA0NCA4MiBlYyAxMGUgN2YrNjQgNDQgNyA2YgoJCSMgYTEgMTA1IDExOCAxMjAsIGUgZDQgYmIgOTIgZDcuCgkJMjYgPSBbWydmZScsICdmMScsICcxMTcnLCAnMTBmJywgJ2Q4JywgJ2UyJywgJzEwMicsICcxMDMnLCAnZTMnXV0KCQkzYyAxMzAgMmEgNTcuMWIoKToKCQkJIyA5YyA2YiAuNiA0NCAuZSogNDQgNmIgNjcgNmUgYTEKCQkJMTYgIjJiOiAiICsgMTMwCgoJCQljID0gJzVlJwoJCQk3IDEzMC40MCgiLmFjIikgPj0gZGE6IDE3CgkJCTcgMTMwLjQwKDU3LjEzNCg1Ny5lKSkgPj0gZGE6IDE3CgkJCTcgMTMwLjQwKDU3LjEzNCg1Ny42KSkgPj0gZGEgNDQgMTMwLjQwKDU3LjEzNCg1Ny5lKSkgPCBkYToKCQkJCWMgPSA1Ny42CgkJCQk3IDI0LmIuMzMoNTcuMTM1KDEzMC4xMzEoNTcuMTM0KGMpLCAnJykpKTogMTcKCgkJCSMgYmYgODggOTgKCQkJOTggPSA1Ny40NigxMzAsIGMpCgkJCTcgMzcgOTg6IDE3CgoJCQkjIDI1IGRjLjYKCQkJNyBjID09IDU3LjVlOgoJCQkJZiA9IDU3LjEzNSgxMzAsIDU3LjYpCgkJCTcgYyA9PSA1Ny42OgoJCQkJZiA9IDU3LjEzNSgxMzApCgoJCQk4NyA9IGRhCgkJCTNjIGM0IDJhIDI2OgoJCQkJNyA5OFsnM2EnXSA9PSBjNFsxXSA0NCA5OFsnNGInXSA9PSBjNFs0XSA0NCA5OFsnNDgnXSA9PSBjNFszXToKCQkJCQk4NyA9IDEKCQkJCQllZQoJCQk3IDg3OgoJCQkJMTYgIjJiOgkgYzggMzMsIDljIGQ0IgoJCQkJMTcKCgkJCTE0ID0gZGEKCQkJNyAzNyAyNC5iLjMzKGYpOgoJCQkJNyAnNicgMmEgNTcuMjE6CgkJCQkJMTYgIjJiOgkgMjUgNiIKCQkJCQkxNCA9IDU3LjRhKDEzMCwgOTgpCgkJCTNmOgoJCQkJMTQgPSAyNC5iLjkwKGYpCgkJCTU3LjM4KDEzMCwgOTgsIDU3LjYpCgoJCQkjIDI1IGRjLmUKCQkJNTQgPSAxMzAKCQkJNyBjID09IDU3LjY6CgkJCQkxMzAgPSAxMzAuMTMxKDU3LjEzNChjKSwgJycpCgoJCQkxYSA9IDk4WycxYSddID0gNTcuMjIoMTQpCgkJCTggPSBkYQoJCQk3IDE0IDQ0IDE0ID4gNTcuMjggNDQgJ2UnIDJhIDU3LjIxOgoJCQkJNyAzNyAyNC5iLjMzKDU3LjEzNSgxMzAsIDU3LmUpKToKCQkJCQkxNiAiMmI6CSAyNSA4IgoJCQkJCTggPSAxNCAvIDU3LjI4ICsgMQoJCQkJCTggPSA1Ny41NigxMzAsIDk4LCA4KQoJCQkJNTcuMzgoMTMwLCA5OCwgNTcuZSkKCgkJCTcgOCA9PSBkYToKCQkJCTcxID0gNTcuMTM1KDEzMCArIDU3LjEzNCg1Ny5lKSkKCQkJCTcgMjQuYi4zMyg3MSk6IDggPSAxCgoJCQkyNi45ZShbMjQuYi40OSg1NCksIDk4WyczYSddLCAxYSwgOThbJzQ4J10sIDk4Wyc0YiddLCA5OFsnNGMnXSwgOThbJzY1J10sIDk4Wyc3MiddLCA4XSkKCgkJCSMgNGQgNWUgMTMsIDExZiA2YiBmYgoJCQk3ICc3MycgMmEgNTcuMjE6CgkJCQlmID0gNTcuMTM1KDEzMCkKCQkJCTcgMjQuYi4zMyhmKToKCQkJCQk2ID0gNTcuMTM1KDEzMCArIDU3LjEzNCg1Ny42KSkKCQkJCQk3IDM3IDI0LmIuMzMoNik6CgkJCQkJCTE2ICIyYjoJIC42IGY2J2M3IGY4LCAzNyAzNCA1ZSAxMyAzYyBjMCIKCQkJCQkzZjoKCQkJCQkJMTYgIjJiOgkgNGQgNWUgMTMiCgkJCQkJCTI0LjM0KGYpCgoJCSMgMjUgNmUKCQk3IDM3IDI2OiAxMjcKCQkxNiAiMmI6IDI1ICU0MiIgJSA1Ny4xOAoJCTU3LjYxKCIlOTciICUgMjYp")))(lambda a,b:b[int("0x"+a.group(1),16)],"00|1|2|3|4|slice_frame_end|zb64|if|slices|9|a|path|rtype|d|slice|f|record_dir|VNC_frame_|VNC_frame_data_compressed|data|out_size|_slice_frame_length|print|continue|record_list|slice_frame_start|size|rec_list|slice_index|session_content|slice_str|slice_frame_length|zb_content|action|get_size_unit|slice_content|os|Generate|info_list|min_frames|slice_size|post_content|in|LOG|VNC_frame_data|session|compress_level|record_html|restore_raw|raw_content|def|exists|remove|35|record_create|not|generate_markdown|max_frames|title|novnc_player|for|var|data_size|else|find|record_data|s|has_key|and|45|get_frame_info|raw_rec|time|basename|generate_zb64|create|author|Remove|generate_raw|close|records|content_end|st_ctime|VNC_frame_length|orig_rec|n|generate_slices|self|write|init_frame_info|get_frame_time|1024|open|www_dir|raw|key|post_link|generate_list|data_compressed|items|base64|tags|markdown|record|ignores|isdigit|globals|the|in_size|session_md|list|remove_old|unit|slice_file|desc|remove_raw|VNC_frame_data_size|stat_x|stat_y|VNC_frame_encoding|permalink|str|k|locals|VNC_record_player|content|post|zlib|rec_long|strftime|generate|encoding|len|round|VNC_record_data|found|frame|Restore|dirname|v|Invalid|VNC_frame_size|py_data|compare|getsize|VNC_frame_time|several|VNC_record_dir|VNC_slice_size|hashlib|post_md|r|info|python|orig|subdirectory|Ignore|or|append|string|gmtime|file|elif|layout|description|javascript|decompress|recordings|compressed|ratio|Write|fullscreen|md|split|hexdigest|b64encode|directory|md5|recording|out|b64decode|val|gitignore|stat|compress|sort|getctime|to|category|Compress|exec|Grab|security|c1|c2|__init__|ri|Save|already|t|Already|Unknown|listdir|seconds|Records|vplayer|Convert|default|prepend|ignore|random|isfile|it|target|rstrip|pieces|Create|origin|0|update|xxx|import|groups|binary|Ensure|frames|Author|Slices|w|one|Ratio|float|while|x|lower|eough|files|class|break|m|group|Title|Total|start|match|novnc|doesn|index|exist|noVNC|strip|space|atof|html|Name|repr|100|as|Tags|Desc|root|is|code|1000|eval|y|join|play|step|_end|with|Time|re|walk|js|then|by|read|true|Size|too|old|z|env|end|M|Get|save|big|bin|256|usr|h|dir|length|return|KB|H|If|binascii|VNC_|i|S|record_session|rec|replace|K|Y|suffix|abspath|G".split("|")))
+#!/usr/bin/env python
+#-*-coding:utf-8-*-
+
+import os, re, time, base64, zlib, binascii, hashlib, random, string
+
+class Records:
+  def __init__(self, www_dir = "./", record_dir = 'recordings/', record_list = 'records.js',
+      record_html = 'records.html', slice_size = 256, compress_level = 9,
+      slice_str = '=-+-+=', min_frames = 35, max_frames = 45, novnc_player = '/vplayer/',
+      action = ('remove', 'zb64', 'slice', 'md', 'restore_raw', 'remove_raw')):
+
+    self.www_dir = www_dir
+    self.record_dir = record_dir
+    self.record_list = record_list
+    self.record_html = record_html
+    # in KB
+    self.slice_size = slice_size * 1024
+    self.compress_level = compress_level
+    self.slice_str = slice_str
+    # Ensure frames eough for play several seconds
+    self.min_frames = min_frames
+    self.max_frames = max_frames
+    self.action = action
+    self.novnc_player = novnc_player
+
+    self.raw = "raw"
+    self.zb64 = "zb64"
+    self.slice = "slice"
+    self.slices = "slice."
+    self.post_md = "post.md"
+    self.session_md = "session.md"
+
+  def suffix(self, rtype):
+    return "." + rtype
+
+  def abspath(self, path = '', rtype = ''):
+    path = self.record_dir + path
+    if rtype: path = path + self.suffix(rtype)
+    #return os.path.abspath(path)
+    return path
+
+  def format_ctime(self, ctime, format):
+    return time.strftime(format, time.gmtime(ctime))
+
+  def generate_markdown(self, rec, info, rtype = ''):
+    def md5(str):
+      h = hashlib.md5()
+      h.update(str)
+      return h.hexdigest()
+
+    record_create = self.format_ctime(string.atof(info['create']), "%Y-%m-%d-%H-%M-%S-")
+    post_link = (record_create + info['title'] + "-" + info['time']).replace("  ", " ").replace(" ", "-").replace(":", "-").lower()
+    record_session = md5(post_link)
+
+    orig_rec = rec
+    if os.path.dirname(rec):
+      rec = os.path.dirname(rec) + '/' + record_create + os.path.basename(rec)
+    else:
+      rec = record_create + os.path.basename(rec)
+    rec = rec.replace(self.suffix(self.zb64), '').replace(self.suffix(self.slice), '')
+
+    post_content = "layout: post\n"
+    post_content += "session: /%s/\n" % record_session
+    post_content += "permalink: /%s/\n" % post_link
+    post_content += "fullscreen: true\n"
+
+    # If the target dir is a subdirectory, then, prepend the root recording directory
+    record_dir = os.path.abspath(self.record_dir.replace('//', '/')).replace(os.path.abspath(self.www_dir) + '/', '')
+
+    record_data = orig_rec.replace(self.suffix(self.zb64), '')
+    if rtype:
+      record_data += self.suffix(rtype)
+
+    session_content = "layout: session\n"
+    session_content += "permalink: /%s/\n" % record_session
+    session_content += "record_data: %s\n" % record_data
+    session_content += "record_dir: %s\n" % record_dir
+
+    content = "---\n"
+    content += "author: '%s'\n" % info['author'].replace("'", "").split('<')[0].title().rstrip(' ')
+    content += "title: '%s'\n" % info['title'].replace("  ", " ").replace("-", " ").replace("'", "").title()
+    content += "description: '%s'\n" % info['desc'].replace("'", "")
+    content += "category: [%s]\n" % info['category']
+    content += "tags: [%s]\n" % info['tags']
+    content_end = "---\n"
+
+    # Save record info to markdown, one as session, one as post
+    print "LOG:   Generate post markdown"
+    f = self.abspath(rec, self.post_md)
+    r = open(f,'w+')
+    r.write(content + post_content + content_end);
+    r.close();
+
+    print "LOG:   Generate session markdown"
+    f = self.abspath(rec, self.session_md)
+    r = open(f,'w+')
+    r.write(content + session_content + content_end);
+    r.close();
+
+  def generate_zb64(self, rec, info, rtype = ''):
+    data = info['data']
+    if rtype == '': rtype = self.zb64
+
+    orig = self.slice_str.join(data)
+    info["data_size"] = len(orig)
+
+    out = base64.b64encode(zlib.compress(orig, self.compress_level))
+    info["data_compressed"] = out;
+
+    in_size = len(repr(data))
+    out_size = len(out)
+    ratio = out_size*100 / in_size
+    print "LOG:   Compress Ratio: %d%% (%d --> %d)" % (ratio, in_size, out_size)
+
+    info['size'] = self.get_size_unit(out_size)
+
+    zb_content = ""
+
+    # .slice.x
+    if rtype.find(self.slices) >= 0:
+      zb_content += "var VNC_frame_size = '%s';\n" % info["size"]
+      zb_content += "var VNC_frame_data_size = %s;\n" % info["data_size"]
+    # .slice and .zb64
+    else:
+      for (k, v) in info.items():
+        if k in ("slices", "data", "data_compressed"): continue
+        if str(v).isdigit():
+          zb_content += "var VNC_frame_%s = %s;\n" % (k, v)
+        else:
+          zb_content += "var VNC_frame_%s = '%s';\n" % (k, v)
+
+    zb_content += "var VNC_frame_data_compressed = '%s';\n" % info["data_compressed"]
+
+    f = self.abspath(rec, rtype)
+    z = open(f, 'w+')
+    z.write(zb_content)
+    z.close()
+
+    return out_size;
+
+  def generate_slices(self, rec, info, slices):
+    slice_index = 0
+    slice_frame_start = 0
+    slice_frame_end = 0
+    slice_frame_length = info['length'] / slices;
+
+    slice_content = ""
+    for (k, v) in info.items():
+      if k in ("data", "slices", "data_size", "data_compressed"): continue
+      if str(v).isdigit():
+        slice_content += "var VNC_frame_%s = %s;\n" % (k, v)
+      else:
+        slice_content += "var VNC_frame_%s = '%s';\n" % (k, v)
+
+    data = info['data']
+
+    while (slice_frame_end < info['length']):
+      _slice_frame_length = slice_frame_length
+      if slice_index == 0:
+        if slice_frame_length < self.min_frames:
+          _slice_frame_length = self.min_frames
+        if slice_frame_length > self.max_frames:
+          _slice_frame_length = self.max_frames
+
+      slice_frame_end = slice_frame_start + _slice_frame_length - 1
+      if (slice_frame_end > info['length']):
+        slice_frame_end = info['length']
+      #elif ((info['length'] - slice_frame_end) < self.min_frames):
+      #  slice_frame_end = info['length']
+
+      print "LOG:   start: %d end: %d step: %d _end: %d" % (slice_frame_start, slice_frame_end, _slice_frame_length, info['length'])
+
+      info['data'] = data[slice_frame_start:slice_frame_end]
+      self.generate_zb64(rec, info, self.slices + "%d" % slice_index)
+
+      slice_frame_start = slice_frame_end
+      slice_index += 1
+
+    print "LOG:   Total: %d, slices: %d" % (info['length'], slice_index)
+    info['slices'] = slice_index
+    slice_content += "var VNC_frame_%s = %d;\n" % ('slices', info['slices'])
+
+    # Write slice index
+    f = self.abspath(rec, self.slice)
+    s = open(f, 'w+')
+    s.write(slice_content)
+    s.close()
+
+    return slice_index
+
+  def get_size_unit(self, size):
+    unit = ""
+    if size > 1024:
+      size = round(size / 1024.0, 1)
+      unit = "K"
+    if size > 1024:
+      size = round(size / 1024.0, 1)
+      unit = "M"
+    if size > 1024:
+      size = round(size / 1024.0, 1)
+      unit = "G"
+    return str(size) + unit
+
+  def get_frame_time(self, frame):
+    t = '00:00:00'
+    m = re.match(r'[{}]([0-9]{1,})[{}]', frame)
+    if m and len(m.groups()):
+      t = self.format_ctime(float(m.group(1))/1000, "%H:%M:%S")
+
+    return t
+
+  def generate_raw(self, zb64):
+    info = self.get_frame_info(zb64, self.zb64)
+    if not info:
+      print "LOG:   Invalid zb64 data"
+      return
+
+    raw_content = ''
+    for (k, v) in info.items():
+      if k in ('data', 'size', 'slice_str', 'slices', 'data_size', 'data_compressed'): continue
+      if str(v).isdigit():
+        raw_content += "var VNC_frame_%s = %s;\n" % (k, v)
+      else:
+        raw_content += "var VNC_frame_%s = '%s';\n" % (k, v)
+
+    raw_content += "var VNC_frame_%s = %s;\n" % ('data', ("%r" % info['data']).replace("', '", "',\n'").replace("['{","[\n'{"))
+
+    # Write raw session data
+    f = self.abspath(zb64.replace(self.suffix(self.zb64), ''))
+    s = open(f, 'w+')
+    s.write(raw_content)
+    s.close()
+
+  def init_frame_info(self):
+    info = {"create": '', "title": '', 'author': '', 'category': '', 'tags': '', 'desc': '', 'encoding': 'binary',
+      'length': 0, 'time': 0, 'data': '',
+      'size': '', 'slice_str': self.slice_str, 'slices': 0, 'data_size': 0, 'data': '', 'data_compressed': ''}
+    return info
+
+  def get_frame_info(self, rec, rtype):
+    info = self.init_frame_info()
+
+    for (k, v) in info.items():
+      if k in ('encoding', 'data', 'data_compressed'): continue
+      exec("VNC_frame_%s = ''" % k)
+
+    f = self.abspath(rec)
+    t = open(f)
+    py_data = t.read().replace('var VNC_', 'VNC_')
+    t.close()
+
+    # Convert origin novnc session record data (javascript) to python code
+    exec(py_data)
+
+    key = 'VNC_frame_encoding'
+    if not (globals().has_key(key) or locals().has_key(key)):
+      # already compressed data, ignore it.
+      print "LOG:   Invalid noVNC session data: %s" % rec
+      return ''
+
+    if rtype == 'raw':
+      key = 'VNC_frame_data'
+      if globals().has_key(key) or locals().has_key(key):
+        VNC_frame_length = len(VNC_frame_data)
+        VNC_frame_time = self.get_frame_time(VNC_frame_data[VNC_frame_length-2])
+        VNC_frame_data_compressed = ''
+      else: return ''
+    else:
+      key = 'VNC_frame_data_compressed'
+      if globals().has_key(key) or locals().has_key(key):
+        VNC_frame_data = zlib.decompress(base64.b64decode(VNC_frame_data_compressed)).split(self.slice_str)
+      else: return ''
+
+    for (k, v) in info.items():
+      val = eval("VNC_frame_%s" % k)
+      if val: info[k] = val
+
+    if not info['create']: info['create'] = "%r" % os.path.getctime(f)
+    if not info['title']: info["title"] = os.path.basename(rec.replace(self.suffix(self.zb64), ''))
+    if not info['author']: info['author'] = "Unknown"
+    if not info['category']: info['category'] = ""
+    if not info['tags']: info['tags'] = ""
+    if not info['desc']: info['desc'] = ""
+
+    # Get file size
+    info['size'] = self.get_size_unit(os.path.getsize(f))
+
+    return info
+
+  def generate_list(self, info_list):
+    def compare(x, y):
+      ctime_x = float(x[4])
+      ctime_y = float(y[4])
+      if (ctime_x > ctime_y):
+        return -1
+      elif (ctime_x < ctime_y):
+        return 1
+      else:
+        return 0
+
+    info_list.sort(compare)
+    info_list.insert(0, ['Name', 'Title', 'Size', 'Time', 'Create', 'Author', 'Category', 'Tags', 'Desc'])
+
+    content = "var VNC_slice_size = '%s';\n" % self.get_size_unit(self.slice_size)
+    content += "var VNC_record_player = '%s';\n" % self.novnc_player
+    content += "var VNC_record_dir = '/%s';\n\n" % os.path.basename(self.record_dir.strip('/'))
+    content += "var VNC_record_data = "
+    content += ("%r" % info_list).replace("], ['", "],\n['").replace("[['","[\n['").decode('string_escape')
+    content += ";"
+
+    # Save records list to self.record_list, by default, records.js
+    r = open(self.abspath(self.record_list),'w+')
+    r.write(content);
+    r.close();
+
+  def rec_list(self):
+    def compare(x, y):
+      stat_x = os.stat(self.abspath(x))
+      stat_y = os.stat(self.abspath(y))
+      if (stat_x.st_ctime > stat_y.st_ctime):
+        return -1
+      elif (stat_x.st_ctime > stat_y.st_ctime):
+        return 1
+      else:
+        return 0
+
+    rec_list = []
+    for d in [x[0] for x in os.walk(self.abspath())]:
+      d = './' + d.replace(self.record_dir, '') 
+      rec_list += [(d + "/" + y).replace('//', '/').replace('./', '') for y in os.listdir(self.abspath(d))]
+    rec_list.sort(compare)
+
+    ignores = []
+    for rec in rec_list:
+      rec_long = self.abspath(rec)
+      if not os.path.isfile(rec_long) \
+        or rec.find(".gitignore") >= 0 \
+        or os.path.basename(rec) in (self.record_list, self.record_html):
+        ignores.append(rec)
+
+    for i in ignores: rec_list.remove(i)
+
+    return rec_list
+
+  def restore_raw(self):
+    for rec in self.rec_list():
+      if rec.find(".md") >= 0: continue
+      if rec.find(self.suffix(self.zb64)) >= 0:
+        raw_rec = rec.replace(self.suffix(self.zb64), '')
+        if not os.path.exists(self.abspath(raw_rec)):
+          print "LOG: Restore %s" % raw_rec
+          self.generate_raw(rec)
+
+  def remove_old(self):
+    # list and sort by time
+    for rec in self.rec_list():
+      f = self.abspath(rec)
+      if rec.find(".md") >= 0:
+        os.remove(f)
+        continue
+      if rec in (self.record_list, self.record_html) or rec.find(self.suffix(self.slice)) >= 0:
+        print "LOG: Remove %s" % rec
+        os.remove(f)
+      if rec.find(self.suffix(self.zb64)) >= 0:
+        raw_rec = rec.replace(self.suffix(self.zb64), '')
+        if os.path.exists(self.abspath(raw_rec)):
+          print "LOG: Remove %s" % rec
+          os.remove(f)
+        elif 'restore_raw' in self.action:
+          print "LOG: Restore %s" % raw_rec
+          self.generate_raw(rec)
+          #print "LOG: Remove %s" % rec
+          #os.remove(f)
+
+  def generate(self):
+    # Remove old record list, .zb64 and .slice*
+    if 'remove' in self.action:
+      self.remove_old()
+
+    if 'restore_raw' in self.action:
+      self.restore_raw()
+
+    if 'zb64' not in self.action and 'slice' not in self.action:
+      return
+
+    # Grab the records info and generate files with zlib+base64 and if the
+    # file is too big, slice it to several pieces.
+    info_list = []
+    for rec in self.rec_list():
+      # Ignore the .zb64 and .slice* and the record list file
+      print "LOG: " + rec
+
+      rtype = 'raw'
+      if rec.find(".md") >= 0: continue
+      if rec.find(self.suffix(self.slice)) >= 0: continue
+      if rec.find(self.suffix(self.zb64)) >= 0 and rec.find(self.suffix(self.slice)) < 0:
+        rtype = self.zb64
+        if os.path.exists(self.abspath(rec.replace(self.suffix(rtype), ''))): continue
+
+      # Grab frame info
+      info = self.get_frame_info(rec, rtype)
+      if not info: continue
+
+      # Generate xxx.zb64
+      if rtype == self.raw:
+        f = self.abspath(rec, self.zb64)
+      if rtype == self.zb64:
+        f = self.abspath(rec)
+
+      found = 0
+      for ri in info_list:
+        if info['title'] == ri[1] and info['create'] == ri[4] and info['time'] == ri[3]:
+          found = 1
+          break
+      if found:
+        print "LOG:   Already exists, Ignore it"
+        continue
+
+      out_size = 0
+      if not os.path.exists(f):
+        if 'zb64' in self.action:
+          print "LOG:   Generate zb64"
+          out_size = self.generate_zb64(rec, info)
+          self.generate_markdown(rec, info, self.zb64)
+      else:
+        out_size = os.path.getsize(f)
+        if 'md' in self.action:
+          self.generate_markdown(rec, info, self.zb64)
+
+      # Generate xxx.slice
+      if rtype == self.zb64:
+        rec = rec.replace(self.suffix(rtype), '')
+
+      size = info['size'] = self.get_size_unit(out_size)
+      slices = 0
+      if out_size and out_size > self.slice_size and 'slice' in self.action:
+        if not os.path.exists(self.abspath(rec, self.slice)):
+          print "LOG:   Generate slices"
+          slices = out_size / self.slice_size + 1
+          slices = self.generate_slices(rec, info, slices)
+          self.generate_markdown(rec, info, self.slice)
+        elif 'md' in self.action:
+          self.generate_markdown(rec, info, self.slice)
+
+      if slices == 0:
+        slice_file = self.abspath(rec + self.suffix(self.slice))
+        if os.path.exists(slice_file): slices = 1
+
+      rec_data = rec
+      if slices:
+         rec_data += self.suffix(self.slice)
+         slices = 1
+      else:
+         rec_data += self.suffix(self.zb64)
+
+      rec_data.replace(self.record_dir, '')
+      info_list.append([rec_data, os.path.basename(info['title']), size, info['time'],
+                       info['create'], info['author'], info['category'], info['tags'],
+                       info['desc']])
+
+      # Remove raw data, save the space
+      if 'remove_raw' in self.action:
+        f = self.abspath(rec)
+        if os.path.exists(f):
+          zb64 = self.abspath(rec + self.suffix(self.zb64))
+          if not os.path.exists(zb64):
+            print "LOG:   .zb64 doesn't exist, not remove raw data for security"
+          else:
+            print "LOG:   Remove raw data"
+            os.remove(f)
+
+    # Generate list
+    if not info_list: return
+    print "LOG: Generate %s" % self.record_list
+    self.generate_list(info_list)

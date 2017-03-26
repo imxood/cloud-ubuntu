@@ -1,1 +1,1420 @@
-var _0x0784=['\x74\x65\x78\x74\x43\x6f\x6e\x74\x65\x6e\x74','\x62\x61\x63\x6b\x67\x72\x6f\x75\x6e\x64','\x25\x2c\x20\x23\x66\x66\x36\x36\x36\x36\x29','\x76\x61\x6c\x75\x65','\x66\x75\x6c\x6c\x73\x70\x65\x65\x64','\x46\x49\x4e\x49\x53\x48','\x53\x54\x4f\x50\x50\x45\x44','\x5f\x64\x69\x73\x70\x6c\x61\x79','\x44\x72\x61\x77\x20\x43\x6f\x76\x65\x72\x20\x46\x72\x61\x6d\x65','\x76\x69\x73\x69\x62\x69\x6c\x69\x74\x79','\x76\x69\x73\x69\x62\x6c\x65','\x67\x65\x74\x43\x6f\x6e\x74\x65\x78\x74','\x64\x61\x74\x61','\x69\x6e\x64\x65\x78\x4f\x66','\x72\x65\x61\x6c\x74\x69\x6d\x65','\x64\x69\x73\x61\x62\x6c\x65\x64','\x65\x78\x69\x74\x46\x75\x6c\x6c\x73\x63\x72\x65\x65\x6e','\x6d\x6f\x7a\x43\x61\x6e\x63\x65\x6c\x46\x75\x6c\x6c\x53\x63\x72\x65\x65\x6e','\x77\x65\x62\x6b\x69\x74\x45\x78\x69\x74\x46\x75\x6c\x6c\x73\x63\x72\x65\x65\x6e','\x62\x6f\x64\x79','\x77\x65\x62\x6b\x69\x74\x52\x65\x71\x75\x65\x73\x74\x46\x75\x6c\x6c\x53\x63\x72\x65\x65\x6e','\x6d\x6f\x7a\x52\x65\x71\x75\x65\x73\x74\x46\x75\x6c\x6c\x53\x63\x72\x65\x65\x6e','\x5b\x2b\x5d','\x45\x6e\x74\x65\x72\x20\x46\x75\x6c\x6c\x73\x63\x72\x65\x65\x6e','\x5b\x2d\x5d','\x45\x78\x69\x74\x20\x46\x75\x6c\x6c\x73\x63\x72\x65\x65\x6e','\x6f\x75\x74\x65\x72\x57\x69\x64\x74\x68','\x6f\x75\x74\x65\x72\x48\x65\x69\x67\x68\x74','\x62\x6f\x72\x64\x65\x72','\x31\x70\x78\x20\x73\x6f\x6c\x69\x64\x20\x23\x65\x65\x65','\x70\x6f\x73\x69\x74\x69\x6f\x6e','\x61\x62\x73\x6f\x6c\x75\x74\x65','\x69\x6e\x6e\x65\x72\x57\x69\x64\x74\x68','\x74\x6f\x70','\x30\x70\x78','\x72\x65\x6c\x61\x74\x69\x76\x65','\x61\x75\x74\x6f','\x57\x65\x62\x55\x74\x69\x6c\x2e\x6c\x6f\x61\x64\x5f\x73\x63\x72\x69\x70\x74\x73\x28\x7b\x27\x70\x6c\x61\x79\x62\x61\x63\x6b\x27\x3a\x20\x5b\x27\x72\x65\x63\x6f\x72\x64\x73\x2e\x6a\x73\x27\x5d\x2c\x27','\x27\x3a\x20\x5b\x27\x72\x65\x63\x6f\x72\x64\x73\x2e\x6a\x73\x27\x5d\x2c\x20\x7d\x29\x3b','\x66\x61\x69\x6c\x65\x64','\x67\x65\x74\x54\x69\x6d\x65','\x52\x55\x4e\x4e\x49\x4e\x47','\x63\x6f\x6c\x6f\x72','\x53\x74\x6f\x70\x70\x65\x64','\x23\x36\x36\x36','\x75\x6e\x64\x65\x66\x69\x6e\x65\x64','\x67\x65\x74\x49\x6d\x61\x67\x65\x44\x61\x74\x61','\x70\x75\x74\x49\x6d\x61\x67\x65\x44\x61\x74\x61','\x67\x65\x74\x5f\x63\x6f\x6e\x74\x65\x78\x74','\x67\x6c\x6f\x62\x61\x6c\x41\x6c\x70\x68\x61','\x66\x69\x6c\x6c\x53\x74\x79\x6c\x65','\x66\x69\x6c\x6c\x52\x65\x63\x74','\x61\x64\x64\x43\x6f\x6c\x6f\x72\x53\x74\x6f\x70','\x31\x2e\x30','\x66\x6f\x6e\x74','\x74\x65\x78\x74\x41\x6c\x69\x67\x6e','\x66\x69\x6c\x6c\x54\x65\x78\x74','\x46\x69\x6c\x65\x20\x6e\x6f\x74\x20\x66\x6f\x75\x6e\x64\x20\x6f\x72\x20\x6e\x65\x74\x77\x6f\x72\x6b\x20\x73\x70\x65\x65\x64\x20\x69\x73\x73\x75\x65\x21','\x33\x30\x70\x78\x20\x6d\x6f\x6e\x6f\x73\x70\x61\x63\x65','\x23\x61\x30\x30','\x4c\x6f\x61\x64\x69\x6e\x67\x20\x2e\x2e\x2e','\x43\x6f\x6e\x74\x69\x6e\x75\x65\x64','\x23\x30\x61\x30','\x46\x61\x73\x74\x20\x46\x6f\x72\x77\x61\x72\x64\x69\x6e\x67\x20\x2e\x2e\x2e','\x44\x4f\x57\x4e','\x65\x76\x65\x6e\x74','\x74\x6f\x75\x63\x68\x65\x73','\x63\x6c\x69\x65\x6e\x74\x58','\x63\x6c\x69\x65\x6e\x74\x59','\x4d\x4f\x56\x45','\x61\x62\x73','\x23\x66\x30\x30','\x62\x65\x67\x69\x6e','\x6d\x69\x6e\x75\x73','\x70\x6c\x75\x73','\x6f\x6e\x6b\x65\x79\x64\x6f\x77\x6e','\x6b\x65\x79\x43\x6f\x64\x65','\x63\x74\x72\x6c\x4b\x65\x79','\x73\x68\x69\x66\x74\x4b\x65\x79','\x61\x6c\x74\x4b\x65\x79','\x77\x68\x69\x63\x68','\x67\x65\x74\x5f\x6d\x6f\x75\x73\x65','\x75\x6e\x67\x72\x61\x62','\x67\x65\x74\x5f\x6b\x65\x79\x62\x6f\x61\x72\x64','\x61\x75\x74\x6f\x73\x63\x61\x6c\x65','\x6f\x66\x66\x73\x65\x74\x54\x6f\x70','\x6d\x61\x72\x67\x69\x6e\x54\x6f\x70','\x56\x4e\x43\x5f\x66\x72\x61\x6d\x65\x5f','\x74\x6f\x4c\x6f\x63\x61\x6c\x65\x53\x74\x72\x69\x6e\x67','\x69\x6e\x66\x6f','\x54\x68\x65\x20\x61\x73\x79\x6e\x63\x20\x6c\x6f\x61\x64\x69\x6e\x67\x20\x64\x61\x74\x61\x20\x6e\x6f\x74\x20\x62\x65\x6c\x6f\x6e\x67\x20\x74\x6f\x20\x6f\x75\x72\x20\x73\x65\x73\x73\x69\x6f\x6e\x2e','\x73\x75\x62\x73\x74\x72\x69\x6e\x67','\x70\x61\x72\x74\x3a\x20','\x65\x78\x69\x74\x20\x66\x6f\x72\x20\x65\x6d\x70\x74\x79\x20\x64\x61\x74\x61\x2c\x20\x6e\x65\x74\x77\x6f\x72\x6b\x20\x69\x73\x73\x75\x65\x20\x6f\x72\x20\x64\x61\x74\x61\x20\x62\x72\x6f\x6b\x65\x6e\x2e','\x63\x6f\x6e\x63\x61\x74','\x45\x78\x69\x74\x20\x6c\x6f\x61\x64\x69\x6e\x67\x20\x63\x68\x65\x63\x6b\x69\x6e\x67','\x49\x67\x6e\x6f\x72\x65\x20\x64\x75\x70\x6c\x69\x63\x61\x74\x65\x64\x20\x6c\x6f\x61\x64\x69\x6e\x67\x2e\x2e\x2e','\x61\x73\x79\x6e\x63\x4c\x6f\x61\x64','\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c','\x6f\x6e\x73\x63\x72\x69\x70\x74\x73\x6c\x6f\x61\x64','\x57\x65\x62\x55\x74\x69\x6c\x2e\x6c\x6f\x61\x64\x5f\x73\x63\x72\x69\x70\x74\x73\x28\x7b\x27\x63\x6f\x72\x65\x27\x3a\x20\x5b\x27\x62\x61\x73\x65\x36\x34\x2e\x6a\x73\x27\x2c\x20\x27\x77\x65\x62\x73\x6f\x63\x6b\x2e\x6a\x73\x27\x2c\x20\x27\x64\x65\x73\x2e\x6a\x73\x27\x2c\x20\x27\x69\x6e\x70\x75\x74\x2f\x6b\x65\x79\x73\x79\x6d\x2e\x6a\x73\x27\x2c\x20\x27\x69\x6e\x70\x75\x74\x2f\x6b\x65\x79\x73\x79\x6d\x64\x65\x66\x2e\x6a\x73\x27\x2c\x20\x27\x69\x6e\x70\x75\x74\x2f\x78\x74\x73\x63\x61\x6e\x63\x6f\x64\x65\x73\x2e\x6a\x73\x27\x2c\x20\x27\x69\x6e\x70\x75\x74\x2f\x75\x74\x69\x6c\x2e\x6a\x73\x27\x2c\x20\x27\x69\x6e\x70\x75\x74\x2f\x64\x65\x76\x69\x63\x65\x73\x2e\x6a\x73\x27\x2c\x20\x27\x64\x69\x73\x70\x6c\x61\x79\x2e\x6a\x73\x27\x2c\x20\x27\x72\x66\x62\x2e\x6a\x73\x27\x2c\x20\x27\x69\x6e\x66\x6c\x61\x74\x6f\x72\x2e\x6a\x73\x27\x5d\x2c\x20\x27\x70\x6c\x61\x79\x62\x61\x63\x6b\x27\x3a\x20\x5b\x27\x63\x6f\x72\x65\x2e\x6a\x73\x27\x2c\x20\x27\x69\x66\x72\x61\x6d\x65\x52\x65\x73\x69\x7a\x65\x72\x2e\x63\x6f\x6e\x74\x65\x6e\x74\x57\x69\x6e\x64\x6f\x77\x2e\x6d\x69\x6e\x2e\x6a\x73\x27\x2c\x20\x27\x6c\x6f\x61\x64\x2e\x6a\x73\x27\x2c\x20\x27\x72\x65\x63\x6f\x72\x64\x73\x2e\x6a\x73\x27\x5d\x2c\x20\x27','\x27\x3a\x20\x5b\x27\x72\x65\x63\x6f\x72\x64\x73\x2e\x6a\x73\x27\x2c\x20\x66\x6e\x61\x6d\x65\x5d\x2c\x20\x7d\x29\x3b','\x57\x65\x62\x55\x74\x69\x6c\x2e\x6c\x6f\x61\x64\x5f\x73\x63\x72\x69\x70\x74\x73\x28\x7b\x27','\x27\x3a\x20\x5b\x66\x6e\x61\x6d\x65\x5d\x7d\x29\x3b','\x4c\x4f\x41\x44\x49\x4e\x47','\x2e\x7a\x62\x36\x34','\x70\x72\x6f\x74\x6f\x74\x79\x70\x65','\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65','\x49\x6e\x66\x6c\x61\x74\x65','\x69\x6e\x66\x6c\x61\x74\x65','\x72\x65\x73\x65\x74','\x73\x70\x6c\x69\x74','\x64\x65\x6c\x74\x61','\x67\x65\x74\x51\x75\x65\x72\x79\x56\x61\x72','\x72\x61\x74\x69\x6f','\x66\x75\x6c\x6c\x73\x63\x72\x65\x65\x6e','\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72','\x63\x6c\x69\x63\x6b','\x74\x6f\x75\x63\x68\x73\x74\x61\x72\x74','\x6d\x6f\x75\x73\x65\x64\x6f\x77\x6e','\x74\x6f\x75\x63\x68\x6d\x6f\x76\x65','\x6d\x6f\x75\x73\x65\x6d\x6f\x76\x65','\x74\x6f\x75\x63\x68\x65\x6e\x64','\x6d\x6f\x75\x73\x65\x75\x70','\x6d\x6f\x75\x73\x65\x6f\x75\x74','\x6f\x6e\x62\x6c\x75\x72','\x61\x70\x70\x6c\x79','\x72\x65\x74\x75\x72\x6e\x20\x28\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x29\x20','\x7b\x7d\x2e\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72\x28\x22\x72\x65\x74\x75\x72\x6e\x20\x74\x68\x69\x73\x22\x29\x28\x20\x29','\x63\x6f\x6e\x73\x6f\x6c\x65','\x77\x61\x72\x6e','\x64\x65\x62\x75\x67','\x65\x72\x72\x6f\x72','\x65\x78\x63\x65\x70\x74\x69\x6f\x6e','\x74\x72\x61\x63\x65','\x6c\x6f\x67','\x56\x4e\x43\x5f\x73\x63\x72\x65\x65\x6e','\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64','\x56\x4e\x43\x5f\x63\x61\x6e\x76\x61\x73','\x56\x4e\x43\x5f\x63\x61\x6e\x76\x61\x73\x5f\x62\x61\x63\x6b\x75\x70','\x56\x4e\x43\x5f\x6d\x61\x69\x6e','\x63\x75\x72\x72\x65\x6e\x74\x5f\x74\x69\x6d\x65','\x74\x6f\x74\x61\x6c\x5f\x74\x69\x6d\x65','\x56\x4e\x43\x5f\x72\x65\x63\x6f\x72\x64\x73','\x56\x4e\x43\x5f\x73\x74\x61\x74\x75\x73','\x56\x4e\x43\x5f\x70\x6c\x61\x79\x62\x61\x72','\x6c\x65\x66\x74\x5f\x70\x6c\x61\x79\x62\x61\x72','\x72\x69\x67\x68\x74\x5f\x70\x6c\x61\x79\x62\x61\x72','\x6d\x69\x64\x64\x6c\x65\x5f\x70\x6c\x61\x79\x62\x61\x72','\x66\x73\x42\x74\x6e','\x6d\x6f\x72\x65\x42\x74\x6e','\x49\x4e\x49\x54','\x75\x6e\x6b\x6e\x6f\x77\x6e','\x30\x30\x3a\x30\x30\x3a\x30\x30','\x72\x65\x63\x6f\x72\x64\x69\x6e\x67\x73','\x68\x65\x69\x67\x68\x74','\x6c\x65\x6e\x67\x74\x68','\x73\x74\x79\x6c\x65','\x77\x69\x64\x74\x68','\x6f\x66\x66\x73\x65\x74\x57\x69\x64\x74\x68','\x6f\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74','\x69\x6e\x6e\x65\x72\x48\x65\x69\x67\x68\x74','\x6e\x6f\x6e\x65','\x64\x69\x73\x70\x6c\x61\x79','\x74\x69\x74\x6c\x65','\x48\x69\x64\x65\x20\x6e\x6f\x56\x4e\x43\x20\x53\x65\x73\x73\x69\x6f\x6e\x73','\x53\x68\x6f\x77\x20\x6e\x6f\x56\x4e\x43\x20\x53\x65\x73\x73\x69\x6f\x6e\x73','\x62\x6c\x6f\x63\x6b','\x66\x6c\x6f\x6f\x72','\x70\x78\x20\x6d\x6f\x6e\x6f\x73\x70\x61\x63\x65','\x77\x68\x69\x74\x65','\x6c\x65\x66\x74','\x64\x65\x73\x63','\x6d\x69\x6e','\x72\x6f\x75\x6e\x64','\x73\x6c\x69\x63\x65','\x72\x65\x70\x6c\x61\x63\x65','\x23\x65\x65\x65','\x74\x69\x6d\x65','\x63\x72\x65\x61\x74\x65','\x6d\x61\x78','\x43\x72\x65\x61\x74\x65\x20\x40\x20','\x74\x61\x67\x73','\x57\x69\x74\x68\x20\x74\x61\x67\x73\x3a\x20','\x35\x30\x70\x78\x20\x6d\x6f\x6e\x6f\x73\x70\x61\x63\x65','\x63\x65\x6e\x74\x65\x72','\x23\x66\x66\x36\x36\x36\x36','\x56\x50\x6c\x61\x79\x65\x72\x2c\x20\x70\x6f\x77\x65\x72\x65\x64\x20\x62\x79\x20\x68\x74\x74\x70\x3a\x2f\x2f\x74\x69\x6e\x79\x6c\x61\x62\x2e\x6f\x72\x67','\x23\x30\x30\x61\x61\x30\x30'];(function(_0x2b304c,_0x2b87eb){var _0x2d6926=function(_0x228647){while(--_0x228647){_0x2b304c['\x70\x75\x73\x68'](_0x2b304c['\x73\x68\x69\x66\x74']());}};var _0x4a878e=function(){var _0x5dfaa1={'\x64\x61\x74\x61':{'\x6b\x65\x79':'\x63\x6f\x6f\x6b\x69\x65','\x76\x61\x6c\x75\x65':'\x74\x69\x6d\x65\x6f\x75\x74'},'\x73\x65\x74\x43\x6f\x6f\x6b\x69\x65':function(_0x41ac9a,_0x5b8662,_0x1f708e,_0x52582d){_0x52582d=_0x52582d||{};var _0x3f3ac7=_0x5b8662+'\x3d'+_0x1f708e;var _0x40271c=0x0;for(var _0x40271c=0x0,_0x4b2953=_0x41ac9a['\x6c\x65\x6e\x67\x74\x68'];_0x40271c<_0x4b2953;_0x40271c++){var _0x21c97a=_0x41ac9a[_0x40271c];_0x3f3ac7+='\x3b\x20'+_0x21c97a;var _0x4f1856=_0x41ac9a[_0x21c97a];_0x41ac9a['\x70\x75\x73\x68'](_0x4f1856);_0x4b2953=_0x41ac9a['\x6c\x65\x6e\x67\x74\x68'];if(_0x4f1856!==!![]){_0x3f3ac7+='\x3d'+_0x4f1856;}}_0x52582d['\x63\x6f\x6f\x6b\x69\x65']=_0x3f3ac7;},'\x72\x65\x6d\x6f\x76\x65\x43\x6f\x6f\x6b\x69\x65':function(){return'\x64\x65\x76';},'\x67\x65\x74\x43\x6f\x6f\x6b\x69\x65':function(_0x21b785,_0xa6753b){_0x21b785=_0x21b785||function(_0x33bc79){return _0x33bc79;};var _0x1ec941=_0x21b785(new RegExp('\x28\x3f\x3a\x5e\x7c\x3b\x20\x29'+_0xa6753b['\x72\x65\x70\x6c\x61\x63\x65'](/([.$?*|{}()[]\/+^])/g,'\x24\x31')+'\x3d\x28\x5b\x5e\x3b\x5d\x2a\x29'));var _0x5d000e=function(_0xad8d0a,_0x20ba58){_0xad8d0a(++_0x20ba58);};_0x5d000e(_0x2d6926,_0x2b87eb);return _0x1ec941?decodeURIComponent(_0x1ec941[0x1]):undefined;}};var _0x1cdb17=function(){var _0x5cbca2=new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');return _0x5cbca2['\x74\x65\x73\x74'](_0x5dfaa1['\x72\x65\x6d\x6f\x76\x65\x43\x6f\x6f\x6b\x69\x65']['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};_0x5dfaa1['\x75\x70\x64\x61\x74\x65\x43\x6f\x6f\x6b\x69\x65']=_0x1cdb17;var _0x2c8699='';var _0x1244a0=_0x5dfaa1['\x75\x70\x64\x61\x74\x65\x43\x6f\x6f\x6b\x69\x65']();if(!_0x1244a0){_0x5dfaa1['\x73\x65\x74\x43\x6f\x6f\x6b\x69\x65'](['\x2a'],'\x63\x6f\x75\x6e\x74\x65\x72',0x1);}else if(_0x1244a0){_0x2c8699=_0x5dfaa1['\x67\x65\x74\x43\x6f\x6f\x6b\x69\x65'](null,'\x63\x6f\x75\x6e\x74\x65\x72');}else{_0x5dfaa1['\x72\x65\x6d\x6f\x76\x65\x43\x6f\x6f\x6b\x69\x65']();}};_0x4a878e();}(_0x0784,0x13b));var _0x4078=function(_0x5d9052,_0x3b45e1){_0x5d9052=_0x5d9052-0x0;var _0x1d34de=_0x0784[_0x5d9052];return _0x1d34de;};var _0x3c3894=function(){var _0x5cadd7=!![];return function(_0x132d30,_0x13a2cd){var _0x49f714=_0x5cadd7?function(){if(_0x13a2cd){var _0x81aa59=_0x13a2cd['\x61\x70\x70\x6c\x79'](_0x132d30,arguments);_0x13a2cd=null;return _0x81aa59;}}:function(){};_0x5cadd7=![];return _0x49f714;};}();var _0x3ada42=_0x3c3894(this,function(){var _0xc832fc=function(){return'\x64\x65\x76';},_0x3aef45=function(){return'\x77\x69\x6e\x64\x6f\x77';};var _0x292354=function(){var _0xffad4c=new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');return!_0xffad4c['\x74\x65\x73\x74'](_0xc832fc['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x30a13e=function(){var _0x131798=new RegExp('\x28\x5c\x5c\x5b\x78\x7c\x75\x5d\x28\x5c\x77\x29\x7b\x32\x2c\x34\x7d\x29\x2b');return _0x131798['\x74\x65\x73\x74'](_0x3aef45['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x52d13c=function(_0x527f3a){var _0x2b7011=~-0x1>>0x1+0xff%0x0;if(_0x527f3a['\x69\x6e\x64\x65\x78\x4f\x66']('\x69'===_0x2b7011)){_0xcb0b37(_0x527f3a);}};var _0xcb0b37=function(_0xbf0321){var _0x1cf4e9=~-0x4>>0x1+0xff%0x0;if(_0xbf0321['\x69\x6e\x64\x65\x78\x4f\x66']((!![]+'')[0x3])!==_0x1cf4e9){_0x52d13c(_0xbf0321);}};if(!_0x292354()){if(!_0x30a13e()){_0x52d13c('\x69\x6e\x64\u0435\x78\x4f\x66');}else{_0x52d13c('\x69\x6e\x64\x65\x78\x4f\x66');}}else{_0x52d13c('\x69\x6e\x64\u0435\x78\x4f\x66');}});_0x3ada42();var _0x49cafb=function(){var _0x541de2=!![];return function(_0x16c3be,_0x110e05){var _0x31fb65=_0x541de2?function(){if(_0x110e05){var _0x19ba18=_0x110e05[_0x4078('0x0')](_0x16c3be,arguments);_0x110e05=null;return _0x19ba18;}}:function(){};_0x541de2=![];return _0x31fb65;};}();var _0x476f52=_0x49cafb(this,function(){var _0x4ff667=Function(_0x4078('0x1')+_0x4078('0x2')+'\x29\x3b');var _0x433ee0=function(){};var _0x5925fc=_0x4ff667();if(!_0x5925fc[_0x4078('0x3')]){_0x5925fc['\x63\x6f\x6e\x73\x6f\x6c\x65']=function(_0x5889c1){var _0x2f555a={};_0x2f555a['\x6c\x6f\x67']=_0x5889c1;_0x2f555a[_0x4078('0x4')]=_0x5889c1;_0x2f555a[_0x4078('0x5')]=_0x5889c1;_0x2f555a['\x69\x6e\x66\x6f']=_0x5889c1;_0x2f555a[_0x4078('0x6')]=_0x5889c1;_0x2f555a[_0x4078('0x7')]=_0x5889c1;_0x2f555a[_0x4078('0x8')]=_0x5889c1;return _0x2f555a;}(_0x433ee0);}else{_0x5925fc[_0x4078('0x3')][_0x4078('0x9')]=_0x433ee0;_0x5925fc['\x63\x6f\x6e\x73\x6f\x6c\x65'][_0x4078('0x4')]=_0x433ee0;_0x5925fc['\x63\x6f\x6e\x73\x6f\x6c\x65'][_0x4078('0x5')]=_0x433ee0;_0x5925fc[_0x4078('0x3')]['\x69\x6e\x66\x6f']=_0x433ee0;_0x5925fc[_0x4078('0x3')]['\x65\x72\x72\x6f\x72']=_0x433ee0;_0x5925fc['\x63\x6f\x6e\x73\x6f\x6c\x65'][_0x4078('0x7')]=_0x433ee0;_0x5925fc['\x63\x6f\x6e\x73\x6f\x6c\x65'][_0x4078('0x8')]=_0x433ee0;}});_0x476f52();var playStats={'\x49\x4e\x49\x54':0x0,'\x4c\x4f\x41\x44\x49\x4e\x47':0x1,'\x52\x55\x4e\x4e\x49\x4e\x47':0x2,'\x53\x54\x4f\x50\x50\x45\x44':0x3,'\x46\x49\x4e\x49\x53\x48':0x4};var trackStats={'\x49\x4e\x49\x54':0x0,'\x44\x4f\x57\x4e':0x1,'\x4d\x4f\x56\x45':0x2,'\x55\x50':0x3};var vnc_screen=document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64'](_0x4078('0xa'));var vnc_canvas=document[_0x4078('0xb')](_0x4078('0xc'));var vnc_canvas_backup=document[_0x4078('0xb')](_0x4078('0xd'));var vnc_main=document[_0x4078('0xb')](_0x4078('0xe'));var ftime=document[_0x4078('0xb')](_0x4078('0xf'));var ttime=document[_0x4078('0xb')](_0x4078('0x10'));var vnc_records=document[_0x4078('0xb')](_0x4078('0x11'));var vnc_status=document[_0x4078('0xb')](_0x4078('0x12'));var play_bar=document[_0x4078('0xb')](_0x4078('0x13'));var left_play_bar=document[_0x4078('0xb')](_0x4078('0x14'));var right_play_bar=document[_0x4078('0xb')](_0x4078('0x15'));var middle_play_bar=document[_0x4078('0xb')](_0x4078('0x16'));var track_bar=document[_0x4078('0xb')]('\x74\x72\x61\x63\x6b\x42\x61\x72');var fs_btn=document[_0x4078('0xb')](_0x4078('0x17'));var more_btn=document[_0x4078('0xb')](_0x4078('0x18'));var avail_timestamp=0xf*0x3e8;var first_load=0x1;var touchable=0x0;var frames_delta=0xc8;var track_bar_stats=trackStats[_0x4078('0x19')];var prev_track_value;var VNC_frame_data=new Array();var fname,short_fname,start_time,play_stats,frame_idx_max,frame_data_slices,skipframes,canvas_imgdata;var frame_info={'\x74\x69\x74\x6c\x65':_0x4078('0x1a'),'\x61\x75\x74\x68\x6f\x72':_0x4078('0x1a'),'\x63\x72\x65\x61\x74\x65':_0x4078('0x1a'),'\x74\x69\x6d\x65':_0x4078('0x1b'),'\x74\x61\x67\x73':_0x4078('0x1a'),'\x64\x65\x73\x63':_0x4078('0x1a')};var screen_width_input,screen_height_input,screen_width,screen_height,screen_ratio;var fullscreen=![],fullscreen_input=![];var start_disabled=![];var vnc_screen_disabled=0x1;var default_canvas_height=0x14;var prev_canvas_height;var last_x=0x0;var last_y=0x0;var full_frame_found=0x0;var full_frame_idx=0x0;var full_frame_foffset=0x0;var prev_screen_width=0x0;var prev_screen_height=0x0;var fs_cnt=0x0;var canvas_imgdata='';var begin_frame=0x0;var curr_frame_length=0x0;var next_data_slice=0x0;var stopped_by_me=0x0;var prev_uri='';var record_dir=''+DATA_INCLUDE_URI+_0x4078('0x1c');prev_canvas_height=default_canvas_height;vnc_canvas[_0x4078('0x1d')]=default_canvas_height;vnc_canvas_backup['\x68\x65\x69\x67\x68\x74']=default_canvas_height;play_stats=playStats[_0x4078('0x19')];prev_track_value=0x0;prev_play_stats=play_stats;frame_idx_max=0x0;frame_data_slices=0x0;function show_records(){stop();if(vnc_records['\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c'][_0x4078('0x1e')]<0xa)draw_records();vnc_records[_0x4078('0x1f')][_0x4078('0x20')]=vnc_screen[_0x4078('0x21')]+'\x70\x78';if(vnc_screen[_0x4078('0x22')]>0x64)vnc_records[_0x4078('0x1f')][_0x4078('0x1d')]=vnc_screen['\x6f\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74']+'\x70\x78';else vnc_records['\x73\x74\x79\x6c\x65'][_0x4078('0x1d')]=vnc_screen[_0x4078('0x23')]-play_bar['\x6f\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74']-0x2+'\x70\x78';vnc_screen[_0x4078('0x1f')]['\x64\x69\x73\x70\x6c\x61\x79']=_0x4078('0x24');vnc_records['\x73\x74\x79\x6c\x65'][_0x4078('0x25')]='\x62\x6c\x6f\x63\x6b';more_btn[_0x4078('0x26')]=_0x4078('0x27');}function hide_records(){more_btn[_0x4078('0x26')]=_0x4078('0x28');vnc_records[_0x4078('0x1f')][_0x4078('0x25')]=_0x4078('0x24');vnc_screen[_0x4078('0x1f')][_0x4078('0x25')]='\x62\x6c\x6f\x63\x6b';}function op_records(){if(vnc_records[_0x4078('0x1f')][_0x4078('0x25')]===_0x4078('0x29'))hide_records();else show_records();}function format_time(_0x3939dd){var _0x4a1366,_0x339898,_0x5ea06e;if(!_0x3939dd)return _0x4078('0x1b');_0x4a1366=Math[_0x4078('0x2a')](_0x3939dd/0x3e8);_0x5ea06e=Math['\x66\x6c\x6f\x6f\x72'](_0x4a1366/0xe10);_0x339898=_0x5ea06e>0x0?Math[_0x4078('0x2a')]((_0x4a1366-_0x5ea06e*0xe10)/0x3c):Math['\x66\x6c\x6f\x6f\x72'](_0x4a1366/0x3c);_0x4a1366=_0x339898>0x0?Math['\x66\x6c\x6f\x6f\x72'](_0x4a1366-_0x5ea06e*0xe10-_0x339898*0x3c):_0x4a1366;if(_0x5ea06e<0xa)_0x5ea06e='\x30'+_0x5ea06e;if(_0x339898<0xa)_0x339898='\x30'+_0x339898;if(_0x4a1366<0xa)_0x4a1366='\x30'+_0x4a1366;return _0x5ea06e+'\x3a'+_0x339898+'\x3a'+_0x4a1366;}function draw_frameitem(_0x49a987,_0xf64480,_0x4d83a9,_0x2da6fb,_0xa546aa,_0x137f4c,_0x4c1a21){if(!_0x49a987)return;__draw_text(vnc_canvas_backup,_0xf64480+_0x49a987,_0x4d83a9,_0x2da6fb,_0xa546aa,_0x137f4c,_0x4c1a21,0x1,0x0);}function draw_frameinfo(_0x3ff9da,_0xf62a5e){var _0x23a88f,_0x4e8624;var _0x33b7d8=0x23;var _0x23ce3f=_0x33b7d8+_0x4078('0x2b');var _0x5c517e=_0x4078('0x2c');var _0x440b63=_0x4078('0x2d');var _0x20c1dc=_0x33b7d8+0xa;var _0x3022a3=vnc_canvas_backup[_0x4078('0x20')];var _0x14d444=_0x3022a3/21.5;var _0x2505e2='';var _0x1ec789=frame_info[_0x4078('0x2e')];var _0x16c1c7=_0x14d444;var _0x3f6ffa=parseInt(_0x1ec789['\x6c\x65\x6e\x67\x74\x68']/_0x16c1c7);var _0x13dd43=Math[_0x4078('0x2f')](_0x1ec789[_0x4078('0x1e')],_0x16c1c7);var _0x2d79df=0x1e;var _0x251282=_0x2d79df+0x6;var _0x176b29=0x4*_0x20c1dc+(_0x3f6ffa+0x1)*_0x251282;var _0x222438=_0xf62a5e-_0x3ff9da;var _0x9e2c57=_0x1ec789[_0x4078('0x1e')];if(_0x176b29>_0x222438){_0x3f6ffa=parseInt((_0x222438-0x4*_0x20c1dc-_0x251282)/_0x251282);_0x176b29=0x4*_0x20c1dc+(_0x3f6ffa+0x1)*_0x251282;_0x9e2c57=_0x3f6ffa*_0x16c1c7+0x1;}_0x23a88f=Math[_0x4078('0x30')]((_0x3022a3-_0x13dd43*0x12)/0x2);_0x4e8624=Math[_0x4078('0x30')](_0x3ff9da+(_0x222438-_0x176b29)/0x2);for(i=0x0;i<_0x9e2c57;i+=_0x16c1c7){var _0x136c0a=i;var _0x3a9541=Math[_0x4078('0x2f')](_0x136c0a+_0x16c1c7,_0x1ec789[_0x4078('0x1e')]);draw_frameitem(_0x1ec789[_0x4078('0x31')](_0x136c0a,_0x3a9541)[_0x4078('0x32')](/^ /,''),_0x2505e2,_0x2d79df+_0x4078('0x2b'),_0x440b63,_0x4078('0x33'),_0x4e8624,_0x23a88f);_0x4e8624+=_0x251282;}draw_frameitem('','',_0x23ce3f,_0x440b63,_0x5c517e,_0x4e8624,_0x23a88f);_0x4e8624+=_0x20c1dc;var _0x13dd43=0x0;for(var _0x5bef27 in frame_info){if(_0x5bef27===_0x4078('0x26')||_0x5bef27===_0x4078('0x34')||_0x5bef27==='\x64\x65\x73\x63')continue;_0x9e2c57=frame_info[_0x5bef27]['\x6c\x65\x6e\x67\x74\x68'];if(_0x5bef27==='\x74\x61\x67\x73')_0x9e2c57+=0xb;else if(_0x5bef27===_0x4078('0x35'))_0x9e2c57+=0x9;_0x13dd43=Math[_0x4078('0x36')](_0x13dd43,_0x9e2c57);}_0x13dd43=Math['\x6d\x69\x6e'](_0x14d444,_0x13dd43);if(_0x3022a3>_0x13dd43*0x15)_0x23a88f=Math[_0x4078('0x30')]((_0x3022a3-_0x13dd43*0x15)/0x2);else _0x23a88f=0xa;for(var _0x5bef27 in frame_info){if(_0x5bef27===_0x4078('0x26')||_0x5bef27===_0x4078('0x34')||_0x5bef27===_0x4078('0x2e'))continue;_0x2505e2='';if(_0x5bef27===_0x4078('0x35'))_0x2505e2=_0x4078('0x37');if(_0x5bef27===_0x4078('0x38'))_0x2505e2=_0x4078('0x39');draw_frameitem(frame_info[_0x5bef27],_0x2505e2,_0x23ce3f,_0x440b63,_0x5c517e,_0x4e8624,_0x23a88f);_0x4e8624+=_0x20c1dc;}}function draw_frame(){__draw_bg(vnc_canvas_backup);from_height=Math['\x72\x6f\x75\x6e\x64'](vnc_canvas_backup['\x68\x65\x69\x67\x68\x74']/0x6);__draw_text(vnc_canvas_backup,'\x5b\x20'+frame_info[_0x4078('0x26')]['\x73\x75\x62\x73\x74\x72\x69\x6e\x67'](0x0,0x1e)+'\x20\x5d',_0x4078('0x3a'),_0x4078('0x3b'),_0x4078('0x3c'),from_height,0x0,0.8,0x1,_0x4078('0x2c'));to_height=Math[_0x4078('0x30')](vnc_canvas_backup[_0x4078('0x1d')]*3.5/0x4);draw_frameinfo(from_height+Math[_0x4078('0x2a')](0x32+0x32/0x2),to_height-Math[_0x4078('0x2a')](0x1e/0x2));__draw_text(vnc_canvas_backup,_0x4078('0x3d'),'\x33\x30\x70\x78\x20\x6d\x6f\x6e\x6f\x73\x70\x61\x63\x65',_0x4078('0x3b'),_0x4078('0x3e'),to_height,0x0,0.8,0x1,_0x4078('0x2c'));vnc_canvas['\x73\x74\x79\x6c\x65'][_0x4078('0x25')]='\x6e\x6f\x6e\x65';vnc_canvas_backup['\x73\x74\x79\x6c\x65']['\x64\x69\x73\x70\x6c\x61\x79']=_0x4078('0x29');if(fullscreen)enter_fullscreen();}function __update_stats(_0x2cf983,_0x210cdd){var _0x4a573a,_0x474185=_0x210cdd+0x1;if(_0x210cdd>frame_idx_max)_0x474185=frame_idx_max+0x1;ftime[_0x4078('0x3f')]=format_time(foffset);track_bar[_0x4078('0x1f')][_0x4078('0x40')]='\x6c\x69\x6e\x65\x61\x72\x2d\x67\x72\x61\x64\x69\x65\x6e\x74\x28\x74\x6f\x20\x72\x69\x67\x68\x74\x2c\x20\x23\x30\x30\x61\x61\x30\x30\x2c\x20\x23\x66\x66\x36\x36\x36\x36\x20'+parseInt(_0x474185*0x78/(frame_idx_max+0x1))+_0x4078('0x41');if(_0x210cdd>skipframes&&running())track_bar[_0x4078('0x42')]=_0x210cdd;if(_0x210cdd===frame_idx_max||_0x210cdd==full_frame_idx)backup_canvas();if(_0x210cdd<full_frame_idx){vnc_screen_disabled=0x1;mode=_0x4078('0x43');}else if(_0x210cdd===full_frame_idx){if(prev_play_stats===playStats[_0x4078('0x44')]){mode='\x72\x65\x61\x6c\x74\x69\x6d\x65';prev_foffset=full_frame_foffset;if(play_stats==playStats[_0x4078('0x45')])restore();}resume_control();vnc_screen_disabled=0x0;}}function update_stats(_0x5f4fe0,_0x5a543a){if(full_frame_found)__update_stats(_0x5f4fe0,_0x5a543a);else find_full_frame(_0x5f4fe0,_0x5a543a);}function find_full_frame(_0xe2ddc7,_0x31c317){update_screensize();if(!(typeof rfb!=='\x75\x6e\x64\x65\x66\x69\x6e\x65\x64'&&rfb[_0x4078('0x46')]&&vnc_canvas&&vnc_canvas['\x68\x65\x69\x67\x68\x74']!==default_canvas_height))return;if(prev_canvas_height===default_canvas_height){if(vnc_canvas_backup['\x77\x69\x64\x74\x68']!==vnc_canvas[_0x4078('0x20')]){vnc_canvas_backup['\x77\x69\x64\x74\x68']=vnc_canvas[_0x4078('0x20')];vnc_canvas_backup[_0x4078('0x1d')]=vnc_canvas[_0x4078('0x1d')];}vnc_status[_0x4078('0x3f')]=_0x4078('0x47');play_bar[_0x4078('0x1f')][_0x4078('0x48')]=_0x4078('0x49');draw_frame();mode='\x66\x75\x6c\x6c\x73\x70\x65\x65\x64';prev_canvas_height=vnc_canvas[_0x4078('0x1d')];}var _0x25ea9d=vnc_canvas[_0x4078('0x20')];var _0xc88fc6=vnc_canvas[_0x4078('0x1d')];var _0x1af74b=vnc_canvas[_0x4078('0x4a')]('\x32\x64')['\x67\x65\x74\x49\x6d\x61\x67\x65\x44\x61\x74\x61'](_0x25ea9d-0x1,_0xc88fc6-0x1,_0x25ea9d,_0xc88fc6);if(_0x1af74b[_0x4078('0x4b')][0x0]===0x0)return;stop();full_frame_found=0x1;frame=VNC_frame_data[_0x31c317];prev_foffset=frame[_0x4078('0x31')](0x1,frame[_0x4078('0x4c')]('\x7b',0x1));full_frame_foffset=prev_foffset;full_frame_idx=_0x31c317;track_bar[_0x4078('0x2f')]=_0x31c317;mode=_0x4078('0x4d');vnc_screen_disabled=0x0;start_disabled=![];track_bar[_0x4078('0x4e')]=![];vnc_status[_0x4078('0x3f')]='\x46\x75\x6c\x6c\x20\x46\x72\x61\x6d\x65\x20\x46\x6f\x75\x6e\x64';}function running(){return play_stats===playStats['\x52\x55\x4e\x4e\x49\x4e\x47'];}function __exit_fullscreen(){if(document[_0x4078('0x4f')])document[_0x4078('0x4f')]();else if(document[_0x4078('0x50')])document['\x6d\x6f\x7a\x43\x61\x6e\x63\x65\x6c\x46\x75\x6c\x6c\x53\x63\x72\x65\x65\x6e']();else if(document[_0x4078('0x51')])document['\x77\x65\x62\x6b\x69\x74\x45\x78\x69\x74\x46\x75\x6c\x6c\x73\x63\x72\x65\x65\x6e']();}function __enter_fullscreen(){var _0x54e338=document[_0x4078('0x52')];var _0x208311=_0x54e338['\x72\x65\x71\x75\x65\x73\x74\x46\x75\x6c\x6c\x53\x63\x72\x65\x65\x6e']||_0x54e338[_0x4078('0x53')]||_0x54e338[_0x4078('0x54')]||_0x54e338['\x6d\x73\x52\x65\x71\x75\x65\x73\x74\x46\x75\x6c\x6c\x53\x63\x72\x65\x65\x6e'];if(_0x208311)_0x208311['\x63\x61\x6c\x6c'](_0x54e338);}function exit_fullscreen(){__exit_fullscreen();unset_fs();fullscreen=0x0;}function enter_fullscreen(){set_fs();__enter_fullscreen();fullscreen=0x1;}function full_screen(){if(fullscreen){exit_fullscreen();prev_screen_width=screen['\x77\x69\x64\x74\x68'];prev_screen_height=screen[_0x4078('0x1d')];fs_btn[_0x4078('0x3f')]=_0x4078('0x55');fs_btn[_0x4078('0x26')]=_0x4078('0x56');}else{fs_btn[_0x4078('0x3f')]=_0x4078('0x57');fs_btn['\x74\x69\x74\x6c\x65']=_0x4078('0x58');prev_screen_width=screen[_0x4078('0x20')];prev_screen_height=screen[_0x4078('0x1d')];enter_fullscreen();}}function check_fullscreen(){if(window[_0x4078('0x59')]===screen['\x77\x69\x64\x74\x68']&&window[_0x4078('0x5a')]===screen[_0x4078('0x1d')]){if(screen['\x77\x69\x64\x74\x68']>=prev_screen_width&&screen[_0x4078('0x1d')]>=prev_screen_height)set_fs();}else{if(screen[_0x4078('0x20')]<=prev_screen_width&&screen[_0x4078('0x1d')]<=prev_screen_height)unset_fs();}}function set_fs(){if(!fullscreen_input)document[_0x4078('0x52')][_0x4078('0x1f')][_0x4078('0x40')]='\x62\x6c\x61\x63\x6b';vnc_records['\x73\x74\x79\x6c\x65'][_0x4078('0x5b')]=_0x4078('0x5c');vnc_screen[_0x4078('0x1f')]['\x62\x6f\x72\x64\x65\x72']=_0x4078('0x5c');play_bar[_0x4078('0x1f')][_0x4078('0x5d')]=_0x4078('0x5e');update_screensize();var _0x1edfb1=Math[_0x4078('0x30')]((window[_0x4078('0x5f')]-play_bar[_0x4078('0x21')])/0x2);play_bar[_0x4078('0x1f')][_0x4078('0x2d')]=_0x1edfb1+'\x70\x78';vnc_screen[_0x4078('0x1f')]['\x70\x6f\x73\x69\x74\x69\x6f\x6e']=_0x4078('0x5e');vnc_screen[_0x4078('0x1f')][_0x4078('0x2d')]=play_bar[_0x4078('0x1f')]['\x6c\x65\x66\x74'];vnc_records[_0x4078('0x1f')][_0x4078('0x5d')]=_0x4078('0x5e');vnc_records[_0x4078('0x1f')][_0x4078('0x2d')]=play_bar[_0x4078('0x1f')][_0x4078('0x2d')];_0x1edfb1=play_bar[_0x4078('0x22')]+vnc_screen[_0x4078('0x22')];if(_0x1edfb1<window[_0x4078('0x23')]&&(!fullscreen_input||window[_0x4078('0x59')]===screen[_0x4078('0x20')])){_0x1edfb1=Math[_0x4078('0x30')]((window[_0x4078('0x23')]-_0x1edfb1)/0x2);play_bar[_0x4078('0x1f')][_0x4078('0x60')]=_0x1edfb1+'\x70\x78';vnc_screen[_0x4078('0x1f')][_0x4078('0x60')]=_0x1edfb1+play_bar[_0x4078('0x22')]+'\x70\x78';}else{play_bar[_0x4078('0x1f')][_0x4078('0x60')]=_0x4078('0x61');vnc_screen[_0x4078('0x1f')][_0x4078('0x60')]=play_bar[_0x4078('0x22')]+'\x70\x78';}vnc_records[_0x4078('0x1f')][_0x4078('0x60')]=vnc_screen[_0x4078('0x1f')][_0x4078('0x60')];}function unset_fs(){document[_0x4078('0x52')][_0x4078('0x1f')]['\x62\x61\x63\x6b\x67\x72\x6f\x75\x6e\x64']=_0x4078('0x24');vnc_records[_0x4078('0x1f')]['\x62\x6f\x72\x64\x65\x72']='\x6e\x6f\x6e\x65';vnc_screen[_0x4078('0x1f')]['\x62\x6f\x72\x64\x65\x72']=_0x4078('0x24');play_bar[_0x4078('0x1f')][_0x4078('0x5d')]=_0x4078('0x62');vnc_screen[_0x4078('0x1f')][_0x4078('0x5d')]=_0x4078('0x62');vnc_records[_0x4078('0x1f')][_0x4078('0x5d')]=_0x4078('0x62');update_screensize();play_bar[_0x4078('0x1f')]['\x6c\x65\x66\x74']=_0x4078('0x63');vnc_screen['\x73\x74\x79\x6c\x65'][_0x4078('0x2d')]=_0x4078('0x63');vnc_records[_0x4078('0x1f')][_0x4078('0x2d')]=_0x4078('0x63');play_bar[_0x4078('0x1f')][_0x4078('0x60')]=_0x4078('0x63');vnc_screen[_0x4078('0x1f')][_0x4078('0x60')]='\x61\x75\x74\x6f';vnc_records[_0x4078('0x1f')][_0x4078('0x60')]='\x61\x75\x74\x6f';}function load_records(){eval(_0x4078('0x64')+record_dir+_0x4078('0x65'));}disconnected=function(_0x1e8900,_0x55bfe4){if(_0x55bfe4)test_state=_0x4078('0x66');};notification=function(_0x35deb5,_0x31eeff,_0x3a32f6,_0x4e9efa){vnc_status['\x74\x65\x78\x74\x43\x6f\x6e\x74\x65\x6e\x74']=_0x31eeff;};function __start(){vnc_status[_0x4078('0x3f')]='\x52\x75\x6e\x6e\x69\x6e\x67';iteration=0x0;start_time=new Date()[_0x4078('0x67')]();play_stats=playStats[_0x4078('0x68')];ftime[_0x4078('0x1f')][_0x4078('0x69')]='\x23\x30\x61\x30';speedup();check_load_framedata();next_iteration();}function stop(_0x4ba1d6){backup_canvas();restore_canvas(_0x4ba1d6);play_stats=playStats[_0x4078('0x45')];vnc_status[_0x4078('0x3f')]=_0x4078('0x6a');if(ftime[_0x4078('0x1f')][_0x4078('0x69')]!==_0x4078('0x6b'))ftime[_0x4078('0x1f')][_0x4078('0x69')]=_0x4078('0x6b');}function __stop(){mode=_0x4078('0x4d');update_stats(iteration,frame_idx);stop();resume();}function backup_canvas(){if(!(typeof rfb!==_0x4078('0x6c')&&rfb&&rfb[_0x4078('0x46')]))return;update_screensize();canvas_imgdata=vnc_canvas[_0x4078('0x4a')]('\x32\x64')[_0x4078('0x6d')](0x0,0x0,vnc_canvas[_0x4078('0x20')],vnc_canvas[_0x4078('0x1d')]);}function restore_canvas(_0x1efbc3){if(!full_frame_found||frame_idx<full_frame_idx||canvas_imgdata==='')return;vnc_canvas_backup[_0x4078('0x4a')]('\x32\x64')[_0x4078('0x6e')](canvas_imgdata,0x0,0x0);if(_0x1efbc3)backup_draw_text(_0x1efbc3);}function __draw_bg(_0x292f41,_0x2f3a8c,_0x51c90b){if(_0x292f41===vnc_canvas_backup)ctx=vnc_canvas_backup[_0x4078('0x4a')]('\x32\x64');else ctx=rfb[_0x4078('0x46')][_0x4078('0x6f')]();w=_0x292f41[_0x4078('0x20')];h=_0x292f41['\x68\x65\x69\x67\x68\x74'];if(!_0x2f3a8c){_0x2f3a8c=_0x4078('0x3c');}if(!_0x51c90b)_0x51c90b=0.8;ctx[_0x4078('0x70')]=_0x51c90b;ctx[_0x4078('0x71')]=_0x2f3a8c;ctx[_0x4078('0x72')](0x0,0x0,w,h);}function __draw_text(_0x34544f,_0x3fad8c,_0x50e64d,_0x19c1fb,_0x31a2c0,_0x1108c7,_0x19f8a1,_0x3646e7,_0x48646b,_0x4f3487){if(_0x34544f===vnc_canvas_backup)ctx=vnc_canvas_backup[_0x4078('0x4a')]('\x32\x64');else ctx=rfb[_0x4078('0x46')]['\x67\x65\x74\x5f\x63\x6f\x6e\x74\x65\x78\x74']();w=_0x34544f['\x77\x69\x64\x74\x68'];h=_0x34544f[_0x4078('0x1d')];if(!_0x50e64d)_0x50e64d=_0x4078('0x3a');if(!_0x19c1fb)_0x19c1fb='\x63\x65\x6e\x74\x65\x72';if(!_0x31a2c0)_0x31a2c0='\x77\x68\x69\x74\x65';var _0x2e7359=parseInt(_0x50e64d);if(!_0x19f8a1)_0x19f8a1=parseInt(w/0x2);if(!_0x1108c7)var _0x1108c7=parseInt(h/0x6);if(!_0x3646e7)_0x3646e7=0.8;if(!_0x4f3487){var _0x2db995=ctx['\x63\x72\x65\x61\x74\x65\x4c\x69\x6e\x65\x61\x72\x47\x72\x61\x64\x69\x65\x6e\x74'](0x0,0x0,w,0x0);_0x2db995[_0x4078('0x73')]('\x30','\x23\x30\x30\x61\x61\x30\x30');_0x2db995[_0x4078('0x73')](_0x4078('0x74'),_0x4078('0x3c'));_0x4f3487=_0x2db995;}if(_0x48646b!==0x0){ctx[_0x4078('0x70')]=_0x3646e7;ctx[_0x4078('0x71')]=_0x4f3487;ctx[_0x4078('0x72')](0x0,_0x1108c7-_0x2e7359,w,Math[_0x4078('0x2a')](_0x2e7359+_0x2e7359/0x2));}ctx[_0x4078('0x75')]=_0x50e64d;ctx[_0x4078('0x76')]=_0x19c1fb;ctx[_0x4078('0x71')]=_0x31a2c0;ctx[_0x4078('0x70')]=0x1;ctx[_0x4078('0x77')](_0x3fad8c,_0x19f8a1,_0x1108c7);}function draw_text(_0x5e8f9a,_0x35102a){__draw_text(vnc_canvas,_0x5e8f9a,_0x35102a);}function backup_draw_text(_0x4db63c,_0x2ce96b){__draw_text(vnc_canvas_backup,_0x4db63c,_0x2ce96b);}function resume_control(){start_disabled=![];track_bar[_0x4078('0x4e')]=![];if(full_frame_found&&frame_idx>=full_frame_idx&&frame_idx<frame_idx_max){vnc_canvas_backup[_0x4078('0x1f')][_0x4078('0x25')]=_0x4078('0x24');vnc_canvas[_0x4078('0x1f')][_0x4078('0x25')]=_0x4078('0x29');}}function resume(){resume_control();skipframes=full_frame_idx;track_bar_stats=trackStats[_0x4078('0x19')];prev_track_value=frame_idx_max;}function check_load_timeout(){if(VNC_frame_data[_0x4078('0x1e')]>=skipframes&&VNC_frame_data[_0x4078('0x1e')]>frame_idx)return;restore_canvas('\x4c\x6f\x61\x64\x69\x6e\x67\x20\x74\x69\x6d\x65\x6f\x75\x74\x21');var _0x1dcb4c=Math[_0x4078('0x30')](vnc_canvas_backup[_0x4078('0x1d')]/0x2);__draw_text(vnc_canvas_backup,_0x4078('0x78'),_0x4078('0x79'),'\x63\x65\x6e\x74\x65\x72',_0x4078('0x7a'),_0x1dcb4c,0x0,0.8,0x1,_0x4078('0x2c'));setTimeout(__finish,0x2710);}function stop_onload(_0xcb1107){stop_control();stop(_0x4078('0x7b'));var _0x213d48=0xea60;setTimeout(check_load_timeout,_0x213d48);}function stop_control(){start_disabled=!![];track_bar[_0x4078('0x4e')]=!![];if(mode===_0x4078('0x4d')||mode===_0x4078('0x43')&&skipframes-frame_idx>frames_delta||full_frame_found&&frame_idx<full_frame_idx){vnc_canvas[_0x4078('0x1f')][_0x4078('0x25')]=_0x4078('0x24');vnc_canvas_backup[_0x4078('0x1f')][_0x4078('0x25')]='\x62\x6c\x6f\x63\x6b';}}function speedup(){if(skipframes<=frame_idx)return;mode=_0x4078('0x43');stop_control();}function restore(){vnc_status[_0x4078('0x3f')]=_0x4078('0x7c');speedup();play_stats=playStats['\x52\x55\x4e\x4e\x49\x4e\x47'];ftime[_0x4078('0x1f')][_0x4078('0x69')]=_0x4078('0x7d');check_load_framedata();queue_next_packet();}function start(_0x5a441d,_0x57caae,_0x21c703){hide_records();if(_0x5a441d)resume();else restore_canvas(_0x4078('0x7e'));if(_0x57caae)stats=_0x57caae;else stats=play_stats;if(_0x21c703===_0x4078('0x43'))mode='\x66\x75\x6c\x6c\x73\x70\x65\x65\x64';else mode=_0x4078('0x4d');if(stats!==playStats[_0x4078('0x68')]){vnc_status[_0x4078('0x1f')][_0x4078('0x25')]=_0x4078('0x24');if(fullscreen)set_fs();if(stats===playStats[_0x4078('0x45')])restore();else __start();}else{stop();}}function track_stop(_0x421907,_0x591743){if(track_bar[_0x4078('0x4e')]||vnc_screen_disabled)return;if(_0x421907===0x2)touchable=0x1;if(touchable&&_0x421907===0x1)return;track_bar_stats=trackStats[_0x4078('0x7f')];prev_play_stats=play_stats;if(frame_idx<frame_idx_max&&running())stop();if(_0x421907){var _0x433c43=window[_0x4078('0x80')]||_0x591743;if(_0x433c43[_0x4078('0x81')]){last_x=_0x433c43[_0x4078('0x81')][0x0][_0x4078('0x82')];last_y=_0x433c43['\x74\x6f\x75\x63\x68\x65\x73'][0x0][_0x4078('0x83')];}else{last_x=_0x433c43[_0x4078('0x82')];last_y=_0x433c43[_0x4078('0x83')];}}prev_track_value=Number(track_bar[_0x4078('0x42')]);}function track_move(_0x2f120a,_0x367bd1){if(track_bar[_0x4078('0x4e')]||vnc_screen_disabled)return;if(_0x2f120a===0x2)touchable=0x1;if(touchable&&_0x2f120a===0x1)return;if(track_bar_stats!==trackStats['\x44\x4f\x57\x4e']&&track_bar_stats!==trackStats[_0x4078('0x84')])return;var _0x4d9f01=0x0;var _0x27ccde=0x0;if(_0x2f120a){var _0x18bc4b=window[_0x4078('0x80')]||_0x367bd1;var _0x468e38,_0x2cd91e,_0x1952a3,_0x3d0c28;if(_0x18bc4b['\x74\x6f\x75\x63\x68\x65\x73']){_0x1952a3=_0x18bc4b[_0x4078('0x81')][0x0][_0x4078('0x82')];_0x3d0c28=_0x18bc4b['\x74\x6f\x75\x63\x68\x65\x73'][0x0]['\x63\x6c\x69\x65\x6e\x74\x59'];}else{_0x1952a3=_0x18bc4b[_0x4078('0x82')];_0x3d0c28=_0x18bc4b[_0x4078('0x83')];}_0x468e38=Math[_0x4078('0x85')](_0x1952a3-last_x);_0x2cd91e=Math['\x61\x62\x73'](_0x3d0c28-last_y);if(_0x468e38>_0x2cd91e&&_0x468e38>0x5){_0x4d9f01=0x1;_0x27ccde=Math[_0x4078('0x30')]((_0x1952a3-last_x)*track_bar[_0x4078('0x36')]/track_bar['\x6f\x66\x66\x73\x65\x74\x57\x69\x64\x74\x68']);last_x=_0x1952a3;last_y=_0x3d0c28;}}if(prev_track_value!==Number(track_bar[_0x4078('0x42')]))_0x4d9f01=0x1;if(track_bar_stats!==trackStats[_0x4078('0x84')]&&_0x4d9f01){start_disabled=!![];track_bar_stats=trackStats[_0x4078('0x84')];}if(running())return;var _0x493247,_0x356bc5,_0x4dde1c=Number(track_bar[_0x4078('0x42')])+_0x27ccde;track_bar[_0x4078('0x42')]=_0x4dde1c;_0x356bc5=_0x4dde1c+0x1;_0x493247=VNC_frame_data[_0x4dde1c];if(!_0x493247)return;_0x4dde1c=_0x493247['\x69\x6e\x64\x65\x78\x4f\x66']('\x7b',0x1);if(_0x4dde1c>-0x1){ftime[_0x4078('0x3f')]=format_time(_0x493247[_0x4078('0x31')](0x1,_0x4dde1c));ftime[_0x4078('0x1f')][_0x4078('0x69')]=_0x4078('0x86');}}function track_start(_0x15e121){if(track_bar['\x64\x69\x73\x61\x62\x6c\x65\x64']||vnc_screen_disabled)return;if(_0x15e121===0x2)touchable=0x1;if(touchable&&_0x15e121===0x1)return;track_move();skipframes=Number(track_bar[_0x4078('0x42')])+0x1;if(track_bar_stats!==trackStats[_0x4078('0x84')]){track_bar_stats=trackStats['\x55\x50'];start(0x1,prev_play_stats);return;}track_bar[_0x4078('0x4e')]=!![];track_bar_stats=trackStats['\x55\x50'];if(frame_idx>skipframes)finish();start();}function track_click(_0x174de5){var _0x433e24;if(track_bar[_0x4078('0x4e')])return;skipframes=0x0;if(full_frame_found)begin_frame=full_frame_idx;track_stop();_0x433e24=Number(track_bar['\x76\x61\x6c\x75\x65']);switch(_0x174de5){case _0x4078('0x87'):if(_0x433e24>begin_frame)track_bar['\x76\x61\x6c\x75\x65']=begin_frame;else{resume();return;}break;case'\x65\x6e\x64':if(_0x433e24<frame_idx_max)track_bar['\x76\x61\x6c\x75\x65']=frame_idx_max;else{resume();return;}break;case _0x4078('0x88'):if(_0x433e24<=begin_frame){resume();return;}if(_0x433e24>0x9c4)_0x433e24=parseInt(_0x433e24/0x2);else if(_0x433e24>0x5dc)_0x433e24=parseInt(_0x433e24*0x2/0x3);else if(_0x433e24>0x3e8)_0x433e24-=0x1f4;else if(_0x433e24>0x1f4)_0x433e24-=0xc8;else if(_0x433e24>0x64)_0x433e24-=0x64;else if(_0x433e24>0x32)_0x433e24-=0x32;else if(_0x433e24>0x14)_0x433e24-=0x14;else _0x433e24-=0xa;while(prev_track_value<=_0x433e24)_0x433e24-=0xa;if(_0x433e24>begin_frame)track_bar['\x76\x61\x6c\x75\x65']=_0x433e24;else track_bar[_0x4078('0x42')]=begin_frame;break;case _0x4078('0x89'):if(_0x433e24===frame_idx_max){resume();return;}_0x433e24+=0xa;if(_0x433e24<frame_idx_max)track_bar[_0x4078('0x42')]=_0x433e24;else track_bar[_0x4078('0x42')]=frame_idx_max;break;}track_start();}document[_0x4078('0x8a')]=function(_0x251a87){if(track_bar[_0x4078('0x4e')]||mode==='\x66\x75\x6c\x6c\x73\x70\x65\x65\x64')return;if(!start_disabled&&_0x251a87[_0x4078('0x8b')]===0xd)start();if(!_0x251a87[_0x4078('0x8c')]&&!_0x251a87[_0x4078('0x8d')]&&!_0x251a87[_0x4078('0x8e')])return;_0x251a87=window[_0x4078('0x80')]||_0x251a87;key=_0x251a87[_0x4078('0x8f')]||_0x251a87[_0x4078('0x8b')];switch(key){case 0x25:track_click(_0x4078('0x88'));break;case 0x27:track_click(_0x4078('0x89'));break;case 0x26:track_click('\x62\x65\x67\x69\x6e');break;case 0x28:track_click('\x65\x6e\x64');break;default:break;}};function finish(){var _0x8f5716,_0x27e874=new Date()[_0x4078('0x67')]();_0x8f5716=_0x27e874-start_time;iter_time=parseInt(_0x8f5716/ iterations,0xa);rfb[_0x4078('0x90')]()[_0x4078('0x91')]();rfb[_0x4078('0x92')]()[_0x4078('0x91')]();play_stats=playStats[_0x4078('0x44')];frame_idx=0x0;}function __finish(){if(mode===_0x4078('0x43')&&skipframes>0x0)mode='\x72\x65\x61\x6c\x74\x69\x6d\x65';finish();resume();draw_frame();}function update_screensize(){var _0x384ce2=fullscreen_input&&window[_0x4078('0x5f')]<screen['\x77\x69\x64\x74\x68']?window[_0x4078('0x5f')]:window[_0x4078('0x5f')]-0x1e;var _0x10aae2=fullscreen_input?window[_0x4078('0x5f')]:window[_0x4078('0x23')]-play_bar['\x6f\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74']-0x2;if(screen_width_input<=0x0)screen_width=_0x384ce2;else if(screen_width_input>_0x384ce2)screen_width=_0x384ce2;else if(fullscreen)screen_width=_0x384ce2;else screen_width=screen_width_input;if(screen_height_input<=0x0)screen_height=_0x10aae2;else if(screen_height_input>_0x10aae2)screen_height=_0x10aae2;else if(fullscreen)screen_height=_0x10aae2;else screen_height=screen_height_input;if(screen_width>0x0&&screen_height===0x0)screen_height=Math[_0x4078('0x30')](screen_width/screen_ratio);if(screen_height>0x0&&screen_width===0x0)screen_width=Math[_0x4078('0x30')](screen_height*screen_ratio);if(typeof rfb===_0x4078('0x6c')||!rfb[_0x4078('0x46')])return;rfb[_0x4078('0x46')][_0x4078('0x93')](screen_width,screen_height,0x1);var _0xa58bf9=vnc_canvas[_0x4078('0x1f')]['\x77\x69\x64\x74\x68'];var _0x2b9ab7=vnc_canvas[_0x4078('0x1f')][_0x4078('0x1d')];if(vnc_canvas[_0x4078('0x1d')]<=default_canvas_height)return;var _0x5f75c1=parseInt(vnc_main[_0x4078('0x94')]);if(_0x5f75c1>0x0&&_0x5f75c1<0x14&&vnc_screen[_0x4078('0x22')]+play_bar[_0x4078('0x22')]>=window[_0x4078('0x23')]){document[_0x4078('0x52')][_0x4078('0x1f')][_0x4078('0x95')]=-_0x5f75c1+0x5+'\x70\x78';}if(vnc_screen[_0x4078('0x1f')]['\x77\x69\x64\x74\x68']===_0xa58bf9&&!fullscreen_input)return;if(vnc_canvas_backup[_0x4078('0x20')]!==vnc_canvas[_0x4078('0x20')]){vnc_canvas_backup['\x77\x69\x64\x74\x68']=vnc_canvas[_0x4078('0x20')];vnc_canvas_backup[_0x4078('0x1d')]=vnc_canvas[_0x4078('0x1d')];}vnc_canvas_backup[_0x4078('0x1f')][_0x4078('0x20')]=_0xa58bf9;vnc_canvas_backup[_0x4078('0x1f')][_0x4078('0x1d')]=_0x2b9ab7;vnc_records['\x73\x74\x79\x6c\x65'][_0x4078('0x20')]=_0xa58bf9;if(parseInt(_0x2b9ab7)>0x64)vnc_records['\x73\x74\x79\x6c\x65']['\x68\x65\x69\x67\x68\x74']=_0x2b9ab7;else vnc_records[_0x4078('0x1f')]['\x68\x65\x69\x67\x68\x74']=windows[_0x4078('0x23')]-play_bar['\x6f\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74']-0x2+'\x70\x78';play_bar[_0x4078('0x1f')][_0x4078('0x20')]=_0xa58bf9;var _0x3b6924=parseInt(_0xa58bf9)-left_play_bar[_0x4078('0x21')]-right_play_bar[_0x4078('0x21')]-0x4;middle_play_bar['\x73\x74\x79\x6c\x65']['\x77\x69\x64\x74\x68']=_0x3b6924+'\x70\x78';vnc_screen[_0x4078('0x1f')][_0x4078('0x20')]=_0xa58bf9;}function update_frameinfo(){frame_info[_0x4078('0x26')]=short_fname;for(var _0x4a5227 in frame_info){if(typeof(_0x4078('0x96')+_0x4a5227)!==_0x4078('0x6c'))frame_info[_0x4a5227]=eval(_0x4078('0x96')+_0x4a5227);}frame_info[_0x4078('0x35')]=new Date(parseFloat(frame_info[_0x4078('0x35')])*0x3e8)[_0x4078('0x97')]();}function handle_framedata(_0xfee554){if(_0xfee554[_0x4078('0x4c')](short_fname)<0x0){console[_0x4078('0x98')](_0x4078('0x99'));return;}index=parseInt(_0xfee554[_0x4078('0x9a')](_0xfee554['\x6c\x61\x73\x74\x49\x6e\x64\x65\x78\x4f\x66']('\x2e')+0x1));console[_0x4078('0x98')](_0x4078('0x9b')+index);if(typeof VNC_frame_data_compressed!==_0x4078('0x6c')&&typeof VNC_frame_data_size!==_0x4078('0x6c')&&typeof VNC_frame_slice_str!==_0x4078('0x6c')){VNC_frame_data_slice=decompress(VNC_frame_data_compressed,VNC_frame_data_size,VNC_frame_slice_str);}if(typeof VNC_frame_data_slice===_0x4078('0x6c')||VNC_frame_data_slice['\x6c\x65\x6e\x67\x74\x68']===0x0){console[_0x4078('0x98')](_0x4078('0x9c'));__finish();return;}if(index!==0x0){if(frame_idx>=curr_frame_length)stopped_by_me=0x1;}VNC_frame_data=VNC_frame_data[_0x4078('0x9d')](VNC_frame_data_slice);curr_frame_length=VNC_frame_data[_0x4078('0x1e')]-0x1;VNC_frame_data_slice=undefined;VNC_frame_data_size=undefined;VNC_frame_data_compressed=undefined;if(index===0x0){start(0x0,0x0,_0x4078('0x43'));}else if(stopped_by_me&&!running()){stopped_by_me=0x0;resume_control();restore();}next_data_slice=index+0x1;if(next_data_slice<frame_data_slices)check_load_framedata();}function check_load_framedata(){if(typeof frame_idx===_0x4078('0x6c'))return;if(curr_frame_length>=frame_length-0x1)return;if(curr_frame_length<=skipframes||curr_frame_length<=frame_idx){load_framedata(next_data_slice);return;}if(frame_idx<curr_frame_length){var _0x488c6d,_0x40b298,_0x1abf02,_0x9ef6f5;_0x488c6d=VNC_frame_data[frame_idx];_0x40b298=_0x488c6d[_0x4078('0x4c')]('\x7b',0x1);_0x40b298=_0x40b298<0x0?_0x488c6d['\x69\x6e\x64\x65\x78\x4f\x66']('\x7d',0x1):_0x40b298;_0x1abf02=_0x488c6d[_0x4078('0x31')](0x1,_0x40b298);_0x488c6d=VNC_frame_data[curr_frame_length];_0x40b298=_0x488c6d['\x69\x6e\x64\x65\x78\x4f\x66']('\x7b',0x1);_0x40b298=_0x40b298<0x0?_0x488c6d[_0x4078('0x4c')]('\x7d',0x1):_0x40b298;_0x9ef6f5=_0x488c6d[_0x4078('0x31')](0x1,_0x40b298);_0x40b298=_0x9ef6f5-_0x1abf02-avail_timestamp;if(_0x40b298>0x0){if(!running()){console[_0x4078('0x98')](_0x4078('0x9e'));return;}setTimeout(check_load_framedata,0x3e8);return;}}load_framedata(next_data_slice);}function get_uri(_0x463f02,_0x2f38a3){var _0x52064c;if(short_fname===_0x463f02)_0x52064c=''+INCLUDE_URI+record_dir+'\x2f'+_0x463f02+'\x2e'+_0x2f38a3;else _0x52064c=_0x463f02+'\x2e'+_0x2f38a3;return _0x52064c;}function load_framedata(_0x49b8cf){if(typeof _0x49b8cf===_0x4078('0x6c'))_0x49b8cf=next_data_slice;uri=get_uri(fname,_0x49b8cf);if(uri===prev_uri){console[_0x4078('0x98')](_0x4078('0x9f'));return;}window[_0x4078('0xa0')](uri,handle_framedata,0x1d4c0);prev_uri=uri;}function show_records_list(){if(vnc_records[_0x4078('0xa1')][_0x4078('0x1e')]<0xa)list_records();var _0x1cb691=fullscreen_input&&window[_0x4078('0x5f')]<screen[_0x4078('0x20')]?window[_0x4078('0x5f')]:window[_0x4078('0x5f')]-0x1e;vnc_records[_0x4078('0x1f')][_0x4078('0x20')]=_0x1cb691+'\x70\x78';vnc_records['\x73\x74\x79\x6c\x65'][_0x4078('0x1d')]=window['\x69\x6e\x6e\x65\x72\x48\x65\x69\x67\x68\x74']+'\x70\x78';vnc_screen[_0x4078('0x1f')][_0x4078('0x25')]=_0x4078('0x24');vnc_records['\x73\x74\x79\x6c\x65'][_0x4078('0x25')]=_0x4078('0x29');}window[_0x4078('0xa2')]=function(){vnc_status[_0x4078('0x3f')]='\x4c\x6f\x61\x64\x65\x64';if(fname)init_framedata();else show_records_list();};function load_record(_0x166249){short_fname=_0x166249[_0x4078('0x32')](/.*\//,'');vnc_status[_0x4078('0x3f')]=_0x4078('0x7b');if(first_load===0x1){eval(_0x4078('0xa3')+record_dir+_0x4078('0xa4'));first_load=0x0;}else{reset_framedata();eval(_0x4078('0xa5')+record_dir+_0x4078('0xa6'));}play_stats=playStats[_0x4078('0xa7')];}function load(_0x17f802,_0x44ee15){var _0x3ca048=VNC_record_data;var _0x30ec9e=VNC_record_dir;if(typeof _0x44ee15===_0x4078('0x6c'))fname=_0x3ca048[_0x17f802][0x0];else fname=_0x3ca048[_0x17f802][0x0][_0x4078('0x32')](_0x4078('0xa8'),'')+_0x44ee15;fname=fname[_0x4078('0x32')](/\/$/,'');__finish();load_record(fname);}function arr2str(_0x195eae){var _0x2e0fa1=_0x195eae;if(typeof _0x2e0fa1['\x73\x6c\x69\x63\x65']===_0x4078('0x6c'))_0x2e0fa1['\x73\x6c\x69\x63\x65']=Array[_0x4078('0xa9')][_0x4078('0x31')];var _0x290a90='';var _0x59089a=0x8*0x400;var _0x31bac1;for(_0x31bac1=0x0;_0x31bac1<_0x2e0fa1['\x6c\x65\x6e\x67\x74\x68']/_0x59089a;_0x31bac1++)_0x290a90+=String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'][_0x4078('0x0')](null,_0x2e0fa1['\x73\x6c\x69\x63\x65'](_0x31bac1*_0x59089a,(_0x31bac1+0x1)*_0x59089a));_0x290a90+=String[_0x4078('0xaa')][_0x4078('0x0')](null,_0x2e0fa1[_0x4078('0x31')](_0x31bac1*_0x59089a));return _0x290a90;}function decompress(_0x430f8c,_0x245e5c,_0x55c016){var _0x38466e=new Inflator[_0x4078('0xab')]();var _0x23ab6c=Base64['\x64\x65\x63\x6f\x64\x65'](_0x430f8c);var _0x23ab6c=_0x38466e[_0x4078('0xac')](_0x23ab6c,!![],_0x245e5c);_0x38466e[_0x4078('0xad')]();return arr2str(_0x23ab6c)[_0x4078('0xae')](_0x55c016);}function reset_framedata(){VNC_frame_data=undefined;VNC_frame_data=[];VNC_frame_data_size=undefined;VNC_frame_data_compressed=undefined;VNC_frame_title=undefined;VNC_frame_author=undefined;VNC_frame_create=undefined;VNC_frame_time=undefined;VNC_frame_length=undefined;VNC_frame_slice_str=undefined;VNC_frame_data_slice=undefined;VNC_frame_slices=undefined;start_disabled=![];vnc_screen_disabled=![];play_stats=playStats[_0x4078('0x19')];prev_play_stats=play_stats;track_bar_stats=trackStats['\x49\x4e\x49\x54'];track_bar[_0x4078('0x42')]=0x0;prev_track_value=0x0;last_x=0x0;last_y=0x0;frame_idx=0x0;frame_length=0x0;frame_idx_max=0x0;frame_data_slices=0x0;skipframes=0x0;begin_frame=0x0;prev_canvas_height=default_canvas_height;full_frame_found=0x0;full_frame_idx=0x0;full_frame_foffset=0x0;curr_frame_length=0x0;prev_uri='';next_data_slice=0x0;stopped_by_me=0x0;first_load=0x0;fs_cnt=0x0;prev_screen_width=0x0;prev_screen_height=0x0;frame_info={'\x74\x69\x74\x6c\x65':_0x4078('0x1a'),'\x61\x75\x74\x68\x6f\x72':_0x4078('0x1a'),'\x63\x72\x65\x61\x74\x65':_0x4078('0x1a'),'\x74\x69\x6d\x65':_0x4078('0x1b'),'\x74\x61\x67\x73':_0x4078('0x1a'),'\x64\x65\x73\x63':_0x4078('0x1a')};}function init_framedata(){var _0x724139;if(typeof VNC_frame_data_compressed!==_0x4078('0x6c')&&typeof VNC_frame_data_size!==_0x4078('0x6c')&&typeof VNC_frame_slice_str!==_0x4078('0x6c'))VNC_frame_data=decompress(VNC_frame_data_compressed,VNC_frame_data_size,VNC_frame_slice_str);if(typeof VNC_frame_slices!==_0x4078('0x6c'))frame_data_slices=VNC_frame_slices;if(typeof VNC_frame_length!==_0x4078('0x6c'))frame_length=VNC_frame_length;else frame_length=VNC_frame_data['\x6c\x65\x6e\x67\x74\x68'];curr_frame_length=frame_length;if(typeof VNC_frame_time!==_0x4078('0x6c')){_0x724139=VNC_frame_time;}else{var _0x46a477,_0x17e90a,_0x36261b,_0x20b1cc;_0x17e90a=VNC_frame_data[_0x4078('0x1e')];do{_0x17e90a-=0x1;_0x46a477=VNC_frame_data[_0x17e90a];_0x36261b=_0x46a477[_0x4078('0x4c')]('\x7b',0x1);}while(_0x36261b<0x0);_0x20b1cc=_0x46a477['\x73\x6c\x69\x63\x65'](0x1,_0x36261b);_0x724139=format_time(_0x20b1cc);}ftime[_0x4078('0x3f')]='\x30\x30\x3a\x30\x30\x3a\x30\x30';ttime['\x74\x65\x78\x74\x43\x6f\x6e\x74\x65\x6e\x74']=_0x724139;VNC_frame_time=_0x724139;update_frameinfo();frame_idx_max=frame_length-0x2;track_bar[_0x4078('0x36')]=frame_idx_max;prev_track_value=frame_idx_max;if(frame_data_slices)load_framedata(0x0);else start(0x0,0x0,'\x66\x75\x6c\x6c\x73\x70\x65\x65\x64');}iterations=0x1;skipframes=0x0;mode=_0x4078('0x4d');frames_delta=parseInt(WebUtil['\x67\x65\x74\x51\x75\x65\x72\x79\x56\x61\x72'](_0x4078('0xaf'),frames_delta));screen_width_input=parseInt(WebUtil[_0x4078('0xb0')](_0x4078('0x20'),0x0));screen_height_input=parseInt(WebUtil[_0x4078('0xb0')](_0x4078('0x1d'),0x0));screen_ratio=parseFloat(WebUtil[_0x4078('0xb0')](_0x4078('0xb1'),0x10/0x9));update_screensize();fullscreen_input=0x0;if(typeof FULL_SCREEN!=='\x75\x6e\x64\x65\x66\x69\x6e\x65\x64'&&FULL_SCREEN!=='')fullscreen_input=FULL_SCREEN;fullscreen_input=WebUtil[_0x4078('0xb0')]('\x66',fullscreen_input);if(fullscreen_input===0x0)fullscreen_input=WebUtil[_0x4078('0xb0')](_0x4078('0xb2'),0x0);fullscreen_input=parseInt(fullscreen_input);if(typeof RECORD_DIR!==_0x4078('0x6c')&&RECORD_DIR!=='')record_dir=RECORD_DIR;fname=null;if(typeof DATA_URI!==_0x4078('0x6c')&&DATA_URI!=='')fname=DATA_URI;fname=WebUtil[_0x4078('0xb0')](_0x4078('0x4b'),fname);if(fname){load_record(fname);}else{load_records();vnc_status[_0x4078('0x3f')]='\x4d\x75\x73\x74\x20\x73\x70\x65\x63\x69\x66\x79\x20\x64\x61\x74\x61\x3d\x46\x4f\x4f\x20\x69\x6e\x20\x71\x75\x65\x72\x79\x20\x73\x74\x72\x69\x6e\x67\x2e';}more_btn[_0x4078('0xb3')](_0x4078('0xb4'),op_records,![]);fs_btn[_0x4078('0xb3')](_0x4078('0xb4'),full_screen,![]);track_bar[_0x4078('0xb3')](_0x4078('0xb5'),track_stop,![]);vnc_screen[_0x4078('0xb3')](_0x4078('0xb5'),function(_0x3da6f8){track_stop(0x2,_0x3da6f8);},![]);track_bar[_0x4078('0xb3')](_0x4078('0xb6'),track_stop,![]);vnc_screen['\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72'](_0x4078('0xb6'),function(_0x22cf1c){track_stop(0x1,_0x22cf1c);},![]);track_bar[_0x4078('0xb3')](_0x4078('0xb7'),track_move,![]);vnc_screen[_0x4078('0xb3')](_0x4078('0xb7'),function(_0x2c475a){track_move(0x2,_0x2c475a);},![]);track_bar['\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72']('\x6d\x6f\x75\x73\x65\x6d\x6f\x76\x65',track_move,![]);vnc_screen[_0x4078('0xb3')](_0x4078('0xb8'),function(_0x1df8d2){track_move(0x1,_0x1df8d2);},![]);track_bar[_0x4078('0xb3')](_0x4078('0xb9'),track_start,![]);vnc_screen['\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72'](_0x4078('0xb9'),function(_0x586221){track_start(0x2,_0x586221);},![]);track_bar[_0x4078('0xb3')](_0x4078('0xba'),track_start,![]);vnc_screen['\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72'](_0x4078('0xba'),function(_0x33080c){track_start(0x1,_0x33080c);},![]);vnc_screen[_0x4078('0xb3')](_0x4078('0xbb'),function(_0x3edea3){track_bar_stats=trackStats[_0x4078('0x19')];},![]);window['\x6f\x6e\x72\x65\x73\x69\x7a\x65']=function(){check_fullscreen();update_screensize();};window[_0x4078('0xbc')]=function(){if(!full_frame_found)return;if(frame_idx>=frame_idx_max)return;if(!(skipframes>frame_idx))stop();};
+// play Stats
+var playStats = {
+  INIT: 0,
+  LOADING: 1,
+  RUNNING: 2,
+  STOPPED: 3,
+  FINISH: 4,
+};
+
+var trackStats = {
+  INIT: 0,
+  DOWN: 1,
+  MOVE: 2,
+  UP: 3,
+}
+
+var vnc_screen = document.getElementById('VNC_screen');
+var vnc_canvas = document.getElementById('VNC_canvas');
+var vnc_canvas_backup = document.getElementById('VNC_canvas_backup');
+
+var vnc_main = document.getElementById('VNC_main');
+var ftime = document.getElementById('current_time');
+var ttime = document.getElementById('total_time');
+
+var vnc_records = document.getElementById('VNC_records');
+var vnc_status = document.getElementById('VNC_status');
+
+var play_bar = document.getElementById('VNC_playbar');
+var left_play_bar = document.getElementById('left_playbar');
+var right_play_bar = document.getElementById('right_playbar');
+var middle_play_bar = document.getElementById('middle_playbar');
+var track_bar = document.getElementById('trackBar');
+var fs_btn = document.getElementById('fsBtn');
+var more_btn = document.getElementById('moreBtn');
+
+// preload next slice if less than 10s left
+// here assume the net speed is at least 256k/10s = 25.6 k/s, 256k is the biggest slice size (file size / slices)
+var avail_timestamp = 15*1000;
+
+var first_load = 1;
+
+var touchable = 0;
+// skip drawing if (skipframes - frame_idx) is big
+// draw a text to tell users wait instead.
+var frames_delta = 200;
+
+var track_bar_stats = trackStats.INIT;
+var prev_track_value;
+
+var VNC_frame_data = new Array();
+var fname, short_fname, start_time, play_stats, frame_idx_max, frame_data_slices, skipframes, canvas_imgdata;
+var frame_info = {'title':'unknown', 'author': 'unknown', 'create': 'unknown', 'time': '00:00:00', 'tags': 'unknown', 'desc': 'unknown'};
+var screen_width_input, screen_height_input, screen_width, screen_height, screen_ratio;
+
+var fullscreen = false, fullscreen_input = false;
+var start_disabled = false;
+var vnc_screen_disabled = 1;
+
+var default_canvas_height = 20;
+var prev_canvas_height;
+
+var last_x = 0;
+var last_y = 0;
+
+var full_frame_found = 0;
+var full_frame_idx = 0;
+var full_frame_foffset = 0;
+
+var prev_screen_width = 0;
+var prev_screen_height = 0;
+var fs_cnt = 0;
+
+var canvas_imgdata = '';
+var begin_frame = 0;
+
+var curr_frame_length = 0;
+var next_data_slice = 0;
+var stopped_by_me = 0;
+
+var prev_uri = "";
+
+var record_dir = "" + DATA_INCLUDE_URI + "recordings";
+
+prev_canvas_height = default_canvas_height;
+vnc_canvas.height = default_canvas_height;
+vnc_canvas_backup.height = default_canvas_height;
+play_stats = playStats.INIT;
+prev_track_value = 0;
+prev_play_stats = play_stats;
+frame_idx_max = 0;
+frame_data_slices = 0;
+
+// Record lists
+function show_records() {
+  // console.info("show_records");
+  stop();
+  
+  if (vnc_records.innerHTML.length < 10)
+    draw_records();
+  
+  vnc_records.style.width = vnc_screen.offsetWidth + 'px';
+  if (vnc_screen.offsetHeight > 100)
+    vnc_records.style.height = vnc_screen.offsetHeight + 'px';
+  else
+    vnc_records.style.height = (vnc_screen.innerHeight - play_bar.offsetHeight - 2) + 'px';
+  vnc_screen.style.display = "none";
+  vnc_records.style.display = "block";
+  more_btn.title = "Hide noVNC Sessions";
+}
+
+function hide_records() {
+  // console.info("hide_records");
+
+  more_btn.title = "Show noVNC Sessions";
+  vnc_records.style.display = "none";
+  vnc_screen.style.display = "block";
+}
+
+function op_records() {
+  // console.info("vnc records display " + vnc_records.style.display);
+  if (vnc_records.style.display === "block")
+    hide_records();
+  else
+    show_records();
+}
+
+function format_time(ms) {
+  var s, m, h;
+
+  if (!ms)
+    return '00:00:00';
+
+  s = Math.floor(ms / 1000);
+
+  h = Math.floor(s / 3600);
+  m = h > 0 ? Math.floor((s - h * 3600)/60) : Math.floor(s / 60);
+  s = m > 0 ? Math.floor((s - h * 3600 - m * 60)) : s;
+
+  if (h < 10)
+    h = '0' + h;
+
+  if (m < 10)
+    m = '0' + m;
+
+  if (s < 10)
+    s = '0' + s;
+
+  return h + ":" + m + ":" + s;
+}
+
+function draw_frameitem(item, desc, font, align, color, y, x) {
+  if (!item)
+    return;
+
+  __draw_text(vnc_canvas_backup, desc + item, font, align, color, y, x, 1, 0);
+}
+
+function draw_frameinfo(from_height, to_height) {
+  var x, y;
+  var size = 35;
+  var font = size + "px monospace";
+  var color = "white";
+  var align = "left";
+  var offset = size + 10;
+  var w = vnc_canvas_backup.width;
+  var columns = w / 21.5;
+
+  var desc = '';
+  var info = frame_info['desc'];
+  var line_width = columns;
+  var rows = parseInt(info.length / line_width);
+  var len = Math.min(info.length, line_width);
+
+  var desc_font_size = 30;
+  var desc_offset = desc_font_size + 6;
+  var content_size = 4 * offset + (rows + 1) * desc_offset;
+  var container_size = to_height - from_height;
+  var length = info.length;
+  if (content_size > container_size) {
+     rows = parseInt((container_size - 4 * offset - desc_offset) / desc_offset);
+     content_size = 4 * offset + (rows + 1) * desc_offset;
+     length = rows * line_width + 1;
+  }
+
+  x = Math.round((w - len * 18)/2);
+  y = Math.round(from_height + (container_size - content_size) / 2);
+
+  for (i = 0; i < length; i += line_width) {
+    var from = i;
+    var to = Math.min(from + line_width, info.length);
+    
+    draw_frameitem(info.slice(from, to).replace(/^ /, ""), desc, desc_font_size + 'px monospace', align, '#eee', y, x);
+    y += desc_offset;
+  }
+  draw_frameitem('', '', font, align, color, y, x);
+  y += offset;
+
+  var len = 0;
+  for (var k in frame_info) {
+    if (k === 'title' || k === 'time' || k === 'desc')
+      continue;
+    length = frame_info[k].length
+    if (k === 'tags')
+      length += 11
+    else if (k === 'create')
+      length += 9
+    len = Math.max(len, length);
+  }
+
+  len = Math.min(columns, len);
+  if (w > len * 21)
+    x = Math.round((w - (len * 21))/2);
+  else
+    x = 10;
+
+  for (var k in frame_info) {
+    if (k === 'title' || k === 'time' || k === 'desc')
+      continue;
+    desc = ''
+    if (k === 'create')
+      desc = 'Create @ '
+    if (k === 'tags')
+      desc = 'With tags: '
+
+    draw_frameitem(frame_info[k], desc, font, align, color, y, x);
+    y += offset;
+  }
+}
+
+function draw_frame() {
+  __draw_bg(vnc_canvas_backup);
+
+  from_height = Math.round(vnc_canvas_backup.height/6);
+  __draw_text(vnc_canvas_backup, "[ " + frame_info['title'].substring(0,30) + " ]", "50px monospace", "center", "#ff6666", from_height, 0, 0.8, 1, "white");
+
+  to_height = Math.round(vnc_canvas_backup.height*3.5/4);
+
+  draw_frameinfo(from_height + Math.floor(50 + 50/2), to_height - Math.floor(30/2));
+
+  __draw_text(vnc_canvas_backup, "VPlayer, powered by http://tinylab.org", "30px monospace", "center", "#00aa00", to_height, 0, 0.8, 1, "white");
+
+  vnc_canvas.style.display = 'none';
+  vnc_canvas_backup.style.display = 'block';
+
+  if (fullscreen)
+    enter_fullscreen();
+}
+
+function __update_stats(iteration, frame_idx) {
+  var frame, tmp = frame_idx + 1;
+
+  if (frame_idx > frame_idx_max)
+    tmp = frame_idx_max + 1;
+
+  ftime.textContent = format_time(foffset);
+  track_bar.style.background = "linear-gradient(to right, #00aa00, #ff6666 " + parseInt(tmp * 120 / (frame_idx_max + 1)) + "%, #ff6666)"
+
+  if ((frame_idx > skipframes) && running())
+    track_bar.value = frame_idx;
+
+  if (frame_idx === frame_idx_max || frame_idx == full_frame_idx)
+    backup_canvas();
+
+  if (frame_idx < full_frame_idx) {
+    vnc_screen_disabled = 1;
+    mode = 'fullspeed';
+  } else if (frame_idx === full_frame_idx) {
+    if (prev_play_stats === playStats.FINISH) {
+      mode = 'realtime';
+      prev_foffset = full_frame_foffset;
+      if (play_stats == playStats.STOPPED)
+        restore();
+    }
+    resume_control();
+    vnc_screen_disabled = 0;
+  }
+}
+
+function update_stats(iteration, frame_idx) {
+  if (full_frame_found)
+    __update_stats(iteration, frame_idx);
+  else
+    find_full_frame(iteration, frame_idx);
+}
+
+function find_full_frame(iteration, frame_idx) {
+  update_screensize();
+
+  if (!(typeof(rfb) !== 'undefined' && rfb._display && vnc_canvas && vnc_canvas.height !== default_canvas_height))
+    return;
+
+  if (prev_canvas_height === default_canvas_height) {
+    //console.info("draw the welcome page.");
+    if (vnc_canvas_backup.width !== vnc_canvas.width) {
+      vnc_canvas_backup.width = vnc_canvas.width;
+      vnc_canvas_backup.height = vnc_canvas.height;
+    }
+
+    vnc_status.textContent = "Draw Cover Frame";
+    play_bar.style.visibility = 'visible';
+    draw_frame();
+
+    mode = 'fullspeed';
+    prev_canvas_height = vnc_canvas.height;
+  }
+
+  var w = vnc_canvas.width;
+  var h = vnc_canvas.height;
+  var imgdata = vnc_canvas.getContext('2d').getImageData(w-1, h-1, w, h);
+  // console.info("w: " + w + " h: " + h + " frame: " + frame_idx + " imgdata: " + imgdata.data[0]);
+  if (imgdata.data[0] === 0)
+    return;
+
+  stop();
+
+  full_frame_found = 1;
+  frame = VNC_frame_data[frame_idx];
+  prev_foffset = frame.slice(1, frame.indexOf('{', 1));
+
+  full_frame_foffset = prev_foffset;
+  full_frame_idx = frame_idx;
+  track_bar.min = frame_idx;
+  mode = 'realtime';
+
+  // Play immediately after load the data
+  vnc_screen_disabled = 0;
+  start_disabled = false;
+  track_bar.disabled = false;
+  vnc_status.textContent = "Full Frame Found";
+}
+
+function running() {
+  return (play_stats === playStats.RUNNING)
+}
+
+function __exit_fullscreen() {
+  if (document.exitFullscreen)
+    document.exitFullscreen();
+  else if (document.mozCancelFullScreen)
+    document.mozCancelFullScreen();
+  else if (document.webkitExitFullscreen)
+    document.webkitExitFullscreen();
+}
+
+function __enter_fullscreen() {
+  var element = document.body;
+  var enter = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+  if (enter)
+    enter.call(element);
+}
+
+function exit_fullscreen() {
+  __exit_fullscreen();
+  unset_fs();
+  fullscreen = 0;
+}
+
+function enter_fullscreen() {
+  set_fs();
+  __enter_fullscreen();
+  fullscreen = 1;
+}
+
+function full_screen() {
+  if (fullscreen) {
+    exit_fullscreen();
+    prev_screen_width = screen.width;
+    prev_screen_height = screen.height;
+    fs_btn.textContent = '[+]';
+    fs_btn.title = 'Enter Fullscreen';
+  } else {
+    fs_btn.textContent = '[-]';
+    fs_btn.title = 'Exit Fullscreen';
+    prev_screen_width = screen.width;
+    prev_screen_height = screen.height;
+    enter_fullscreen();
+  }
+}
+
+function check_fullscreen() {
+  if (window.outerWidth === screen.width && window.outerHeight === screen.height) {
+    if (screen.width >= prev_screen_width && screen.height >= prev_screen_height)
+      set_fs();
+  } else {
+    if (screen.width <= prev_screen_width && screen.height <= prev_screen_height)
+      unset_fs();
+  }
+}
+
+function set_fs() {
+  if (!fullscreen_input)
+    document.body.style.background = "black";
+
+  vnc_records.style.border ="1px solid #eee";
+  vnc_screen.style.border ="1px solid #eee";
+
+  play_bar.style.position = "absolute";
+
+  update_screensize();
+
+  var tmp = Math.round((window.innerWidth - play_bar.offsetWidth)/2);
+  play_bar.style.left = tmp + 'px';
+  vnc_screen.style.position = 'absolute';
+  vnc_screen.style.left = play_bar.style.left;
+  vnc_records.style.position = 'absolute';
+  vnc_records.style.left = play_bar.style.left;
+
+  tmp = play_bar.offsetHeight + vnc_screen.offsetHeight;
+
+  if (tmp < window.innerHeight && (!fullscreen_input || window.outerWidth === screen.width)) {
+    tmp = Math.round((window.innerHeight - tmp)/2);
+    play_bar.style.top = tmp + 'px';
+    vnc_screen.style.top = tmp + play_bar.offsetHeight + 'px';
+  } else {
+    play_bar.style.top = '0px';
+    vnc_screen.style.top = play_bar.offsetHeight + 'px';
+  }
+  vnc_records.style.top = vnc_screen.style.top;
+}
+
+function unset_fs() {
+  document.body.style.background = "none";
+
+  vnc_records.style.border = "none";
+  vnc_screen.style.border = "none";
+  play_bar.style.position = "relative";
+  vnc_screen.style.position = 'relative';
+  vnc_records.style.position = 'relative';
+
+  update_screensize();
+
+  play_bar.style.left = 'auto';
+  vnc_screen.style.left = 'auto';
+  vnc_records.style.left = 'auto';
+  play_bar.style.top = 'auto';
+  vnc_screen.style.top = 'auto';
+  vnc_records.style.top = 'auto';
+}
+
+function load_records() {
+  // Load supporting scripts
+  eval("WebUtil.load_scripts({'playback': ['records.js'],'" + record_dir + "': ['records.js'], });");
+}
+
+disconnected = function (rfb, reason) {
+  if (reason)
+    test_state = 'failed';
+}
+
+notification = function (rfb, mesg, level, options) {
+  vnc_status.textContent = mesg;
+}
+
+function __start() {
+  vnc_status.textContent = "Running";
+
+  iteration = 0;
+  start_time = (new Date()).getTime();
+  //recv_message = rfb.testMode(send_array, VNC_frame_encoding);
+
+  play_stats = playStats.RUNNING;
+  ftime.style.color = '#0a0';
+
+  speedup();
+
+  check_load_framedata();
+  next_iteration();
+}
+
+function stop(str) {
+  backup_canvas();
+  restore_canvas(str);
+
+  play_stats = playStats.STOPPED;
+
+  vnc_status.textContent = "Stopped";
+
+  if (ftime.style.color !== '#666')
+    ftime.style.color = '#666';
+}
+
+function __stop() {
+  mode = 'realtime';
+  update_stats(iteration, frame_idx);
+  stop();
+  resume();
+}
+
+function backup_canvas() {
+  //console.info("backup canvas");
+  if (!(typeof(rfb) !== 'undefined' && rfb && rfb._display))
+    return;
+
+  update_screensize();
+
+  canvas_imgdata = vnc_canvas.getContext('2d').getImageData(0, 0, vnc_canvas.width, vnc_canvas.height);
+}
+
+function restore_canvas(str) {
+  if (!full_frame_found || frame_idx < full_frame_idx || canvas_imgdata === '')
+    return;
+
+  vnc_canvas_backup.getContext('2d').putImageData(canvas_imgdata, 0, 0);
+
+  if (str)
+    backup_draw_text(str)
+}
+
+function __draw_bg(canvas, style, transparent) {
+  if (canvas === vnc_canvas_backup)
+    ctx = vnc_canvas_backup.getContext('2d');
+  else
+    ctx = rfb._display.get_context();
+
+  w = canvas.width;
+  h = canvas.height;
+
+  if (!style) {
+    //var gradient=ctx.createLinearGradient(0, 0, w, 0);
+    //gradient.addColorStop("0","#00aa00");
+    //gradient.addColorStop("0.6","blue");
+    //gradient.addColorStop("1.0","#ff6666");
+    //style = gradient;
+    style = "#ff6666";
+  }
+
+  if (!transparent)
+    transparent = 0.8;
+
+  ctx.globalAlpha = transparent;
+  ctx.fillStyle = style;
+  ctx.fillRect(0, 0, w, h);
+}
+
+function __draw_text(canvas, str, font, align, style, y, x, transparent, bg, bg_style) {
+  if (canvas === vnc_canvas_backup)
+    ctx = vnc_canvas_backup.getContext('2d');
+  else
+    ctx = rfb._display.get_context();
+
+  w = canvas.width;
+  h = canvas.height;
+
+  if (!font)
+    font = "50px monospace";
+
+  if (!align)
+    align = "center";
+
+  if (!style)
+    style = "white";
+
+  var font_height = parseInt(font);
+
+  if (!x)
+    x = parseInt(w / 2);
+
+  if (!y)
+    var y = parseInt(h / 6);
+
+  if (!transparent)
+    transparent = 0.8;
+
+  if (!bg_style) {
+    var gradient=ctx.createLinearGradient(0, 0, w, 0);
+    gradient.addColorStop("0","#00aa00");
+    //gradient.addColorStop("0.6","red");
+    gradient.addColorStop("1.0","#ff6666");
+  
+    bg_style = gradient;
+  }
+
+  if (bg !== 0) {
+    ctx.globalAlpha = transparent;
+    ctx.fillStyle = bg_style;
+    ctx.fillRect(0, y - font_height, w, Math.floor(font_height + font_height/2));
+  }
+
+  ctx.font = font;
+  ctx.textAlign = align;
+  ctx.fillStyle = style;
+  ctx.globalAlpha = 1;
+  ctx.fillText(str, x, y);
+}
+
+function draw_text(str, font) {
+  __draw_text(vnc_canvas, str, font);
+}
+
+function backup_draw_text(str, font) {
+  __draw_text(vnc_canvas_backup, str, font);
+}
+
+function resume_control() {
+  start_disabled = false;
+  track_bar.disabled = false;
+
+  if (full_frame_found && (frame_idx >= full_frame_idx) && (frame_idx < frame_idx_max)) {
+    vnc_canvas_backup.style.display = 'none';
+    vnc_canvas.style.display = 'block';
+  }
+}
+
+function resume() {
+  resume_control();
+
+  skipframes = full_frame_idx;
+  track_bar_stats = trackStats.INIT;
+  prev_track_value = frame_idx_max;
+}
+
+function check_load_timeout() {
+  // Must check if really timeout...
+  // console.info("***skipframes: " + skipframes + " curr_frame_length: " + curr_frame_length + " frame_idx: " + frame_idx);
+  if (VNC_frame_data.length >= skipframes && VNC_frame_data.length > frame_idx)
+    return;
+
+  restore_canvas("Loading timeout!");
+
+  var y = Math.round(vnc_canvas_backup.height/2);
+  __draw_text(vnc_canvas_backup, "File not found or network speed issue!","30px monospace", "center", "#a00", y, 0, 0.8, 1, "white");
+
+  setTimeout(__finish, 10000);
+}
+
+function stop_onload(stage) {
+  // console.info("Stopped @stage " + stage + " @frame: " + frame_idx);
+  stop_control();
+  stop("Loading ...");
+
+  // Need to check if the file is not found or the network speed is too slow.
+  // May be possible to get the error info while the file is not found.
+  var timeout = 60000;
+  setTimeout(check_load_timeout, timeout);
+}
+
+function stop_control() {
+  start_disabled = true;
+  track_bar.disabled = true;
+
+  if (mode === 'realtime' || (mode === 'fullspeed' && skipframes - frame_idx > frames_delta)
+    || (full_frame_found && frame_idx < full_frame_idx)) {
+    vnc_canvas.style.display = 'none';
+    vnc_canvas_backup.style.display = 'block';
+  }
+}
+
+function speedup() {
+  if (skipframes <= frame_idx)
+    return;
+
+  mode = 'fullspeed';
+  stop_control();
+}
+
+function restore() {
+  vnc_status.textContent = "Continued";
+
+  speedup();
+
+  play_stats = playStats.RUNNING;
+  ftime.style.color = '#0a0';
+
+  check_load_framedata();
+  queue_next_packet();
+}
+
+function start(clean, prev_play_stats, speed) {
+  hide_records();
+
+  if (clean)
+    resume();
+  else
+    restore_canvas("Fast Forwarding ...");
+
+  if (prev_play_stats)
+    stats = prev_play_stats;
+  else
+    stats = play_stats;
+
+  if (speed === 'fullspeed')
+    mode = 'fullspeed';
+  else
+    mode = 'realtime';
+
+  if (stats !== playStats.RUNNING) {
+    vnc_status.style.display = 'none';
+
+    if (fullscreen)
+      set_fs();
+
+    if (stats === playStats.STOPPED)
+      restore();
+    else
+      __start();
+  } else {
+    stop();
+  }
+}
+
+function track_stop(touch, e) {
+  if (track_bar.disabled || vnc_screen_disabled)
+    return;
+
+  if (touch === 2)
+    touchable = 1;
+
+  if (touchable && touch === 1)
+    return;
+
+  track_bar_stats = trackStats.DOWN;
+  prev_play_stats = play_stats;
+  if ((frame_idx < frame_idx_max) && running())
+    stop();
+
+  if (touch) {
+    var evt = window.event || e;
+    //evt.prevtDefault();
+    if (evt.touches) {
+      last_x = evt.touches[0].clientX;
+      last_y = evt.touches[0].clientY;
+    } else {
+      last_x = evt.clientX;
+      last_y = evt.clientY;
+    }
+    // console.log("x is " + last_x + " y is " + last_y);
+  }
+
+  prev_track_value = Number(track_bar.value);
+  // console.log("prev track value is " + prev_track_value);
+}
+
+function track_move(touch, e) {
+  if (track_bar.disabled || vnc_screen_disabled)
+    return;
+
+  if (touch === 2)
+    touchable = 1;
+
+  if (touchable && touch === 1)
+    return;
+
+  if ((track_bar_stats !== trackStats.DOWN) && (track_bar_stats !== trackStats.MOVE))
+    return;
+
+  var moved = 0;
+  var offset = 0;
+
+  if (touch) {
+    var evt = window.event || e;
+    var x_offset, y_offset, x, y;
+    if (evt.touches) {
+      x = evt.touches[0].clientX;
+      y = evt.touches[0].clientY;
+    } else {
+      x = evt.clientX;
+      y = evt.clientY;
+    }
+  
+    x_offset = Math.abs(x - last_x);
+    y_offset = Math.abs(y - last_y);
+    if ((x_offset > y_offset) && (x_offset > 5)) {
+      moved = 1;
+      offset = Math.round((x - last_x) * track_bar.max / track_bar.offsetWidth);
+      // console.log("x is " + x + " y is " + y + " moved is " + moved);
+      last_x = x;
+      last_y = y;
+    }
+  }
+
+  if (prev_track_value !== Number(track_bar.value))
+    moved = 1;
+
+  //console.log("cur track value is " + Number(track_bar.value));
+
+  if ((track_bar_stats !== trackStats.MOVE) && (moved)) {
+    start_disabled = true;
+    track_bar_stats = trackStats.MOVE;
+  }
+
+  if (running())
+    return;
+
+  var frame, tmp, idx = Number(track_bar.value) + offset;
+  track_bar.value = idx;
+  tmp = idx + 1;
+
+  frame = VNC_frame_data[idx];
+  if (!frame)
+    return;
+
+  idx = frame.indexOf('{', 1);
+  if (idx > -1) {
+    ftime.textContent = format_time(frame.slice(1, idx));
+    ftime.style.color = '#f00';
+  }
+}
+
+function track_start(touch) {
+  if (track_bar.disabled || vnc_screen_disabled)
+    return;
+
+  if (touch === 2)
+    touchable = 1;
+
+  if (touchable && touch === 1)
+    return;
+
+  track_move();
+
+  skipframes = Number(track_bar.value) + 1;
+
+  if (track_bar_stats !== trackStats.MOVE) {
+    track_bar_stats = trackStats.UP;
+    start(1, prev_play_stats);
+    return;
+  }
+
+  track_bar.disabled = true;
+  track_bar_stats = trackStats.UP;
+  if (frame_idx > skipframes)
+     finish();
+  start();
+}
+
+function track_click(button) {
+  var tmp;
+
+  if (track_bar.disabled)
+    return;
+
+  skipframes = 0;
+  if (full_frame_found)
+    begin_frame = full_frame_idx;
+
+  track_stop();
+
+  tmp = Number(track_bar.value);
+
+  switch(button) {
+  case 'begin':
+    if (tmp > begin_frame)
+      track_bar.value = begin_frame;
+    else {
+      resume();
+      return;
+    }
+    break;
+  case 'end':
+    if (tmp < frame_idx_max)
+      track_bar.value = frame_idx_max;
+    else {
+      resume();
+      return;
+    }
+    break;
+  case 'minus':
+    if (tmp <= begin_frame) {
+      resume();
+      return;
+    }
+
+    if (tmp > 2500)
+      tmp = parseInt(tmp / 2);
+    else if (tmp > 1500)
+      tmp = parseInt(tmp * 2 / 3);
+    else if (tmp > 1000)
+      tmp -= 500;
+    else if (tmp > 500)
+      tmp -= 200;
+    else if (tmp > 100)
+      tmp -= 100;
+    else if (tmp > 50)
+      tmp -= 50;
+    else if (tmp > 20)
+      tmp -= 20;
+    else
+      tmp -= 10;
+
+    while (prev_track_value <= tmp)
+      tmp -= 10;
+
+    if (tmp > begin_frame)
+      track_bar.value = tmp;
+    else
+      track_bar.value = begin_frame;
+    break;
+  case 'plus':
+    if (tmp === frame_idx_max) {
+      resume();
+      return;
+    }
+
+    tmp += 10;
+    if (tmp < frame_idx_max)
+      track_bar.value = tmp;
+    else
+      track_bar.value = frame_idx_max;
+    break;
+  }
+  track_start();
+}
+
+document.onkeydown = function(e) {
+  if (track_bar.disabled || (mode === 'fullspeed'))
+    return;
+
+  //console.info("e.keyCode is " + e.keyCode);
+  if (!start_disabled && e.keyCode === 13)
+    start();
+
+  if (!e.ctrlKey && !e.shiftKey && !e.altKey)
+    return;
+
+  e = window.event || e;
+
+  key = e.which || e.keyCode;
+
+  switch (key) {
+  case 37: // Left: -
+    track_click('minus');
+    break;
+  case 39: // Right: +
+    track_click('plus');
+    break;
+  case 38: // Up: begin
+    track_click('begin');
+    break;
+  case 40: // Down: end
+    track_click('end');
+    break;
+  default:
+    break;
+  }
+}
+
+function finish() {
+  // Finished with all iterations
+  var total_time, end_time = (new Date()).getTime();
+  total_time = end_time - start_time;
+
+  iter_time = parseInt(total_time / iterations, 10);
+  // Shut-off event interception
+  rfb.get_mouse().ungrab();
+  rfb.get_keyboard().ungrab();
+
+  play_stats = playStats.FINISH;
+  frame_idx = 0;
+}
+
+function __finish() {
+  if ((mode === 'fullspeed') && (skipframes > 0))
+    mode = 'realtime';
+
+  finish();
+  resume();
+  draw_frame();
+}
+
+function update_screensize() {
+  var target_width = fullscreen_input && window.innerWidth < screen.width ? window.innerWidth : window.innerWidth - 30;
+  var target_height = fullscreen_input ? window.innerWidth : window.innerHeight - play_bar.offsetHeight - 2;
+
+  if (screen_width_input <= 0)
+    screen_width = target_width;
+  else if (screen_width_input > target_width)
+    screen_width = target_width;
+  else if (fullscreen)
+    screen_width = target_width;
+  else
+    screen_width = screen_width_input;
+
+  if (screen_height_input <= 0)
+    screen_height = target_height;
+  else if (screen_height_input > target_height)
+    screen_height = target_height;
+  else if (fullscreen)
+    screen_height = target_height;
+  else
+    screen_height = screen_height_input;
+
+  if (screen_width > 0 && screen_height === 0)
+    screen_height = Math.round(screen_width / screen_ratio);
+  if (screen_height > 0 && screen_width === 0)
+    screen_width = Math.round(screen_height * screen_ratio);
+
+  if (typeof(rfb) === 'undefined' || !rfb._display)
+    return;
+
+  rfb._display.autoscale(screen_width, screen_height, 1);
+
+  var w = vnc_canvas.style.width;
+  var h = vnc_canvas.style.height;
+
+  // wait for rfb initialization
+  if (vnc_canvas.height <= default_canvas_height)
+    return;
+
+  // Fix up for chromium browser
+  var vnc_main_offsettop = parseInt(vnc_main.offsetTop);
+  if (vnc_main_offsettop > 0 && vnc_main_offsettop < 20 && vnc_screen.offsetHeight + play_bar.offsetHeight >= window.innerHeight) {
+    document.body.style.marginTop = (-vnc_main_offsettop + 5) + 'px';
+  }
+
+  if (vnc_screen.style.width === w && !fullscreen_input)
+    return;
+
+  if (vnc_canvas_backup.width !== vnc_canvas.width) {
+    vnc_canvas_backup.width = vnc_canvas.width;
+    vnc_canvas_backup.height = vnc_canvas.height;
+  }
+
+  vnc_canvas_backup.style.width = w;
+  vnc_canvas_backup.style.height = h;
+
+  vnc_records.style.width = w;
+  if (parseInt(h) > 100)
+    vnc_records.style.height = h;
+  else
+    vnc_records.style.height = (windows.innerHeight - play_bar.offsetHeight - 2) + 'px';
+
+  play_bar.style.width = w;
+
+  var middle_play_bar_width = parseInt(w) - left_play_bar.offsetWidth - right_play_bar.offsetWidth - 4;
+  middle_play_bar.style.width = middle_play_bar_width + "px";
+
+  vnc_screen.style.width = w;
+}
+
+function update_frameinfo() {
+  frame_info['title'] = short_fname;
+
+  for (var k in frame_info) {
+    if (typeof("VNC_frame_" + k) !== "undefined")
+      frame_info[k] = eval("VNC_frame_" + k);
+  }
+
+  // the original create time is a timestamp from 1970.1.1
+  frame_info['create'] = (new Date(parseFloat(frame_info['create'])*1000)).toLocaleString()
+}
+
+function handle_framedata(uri) {
+  // console.info("uri: " + uri + " short_fname: " + short_fname);
+  if (uri.indexOf(short_fname) < 0) {
+    console.info("The async loading data not belong to our session.");
+    return;
+  }
+
+  index = parseInt(uri.substring(uri.lastIndexOf(".")+1));
+
+  console.info("part: " + index);
+
+  if (typeof(VNC_frame_data_compressed) !== 'undefined'
+    && typeof(VNC_frame_data_size) !== 'undefined'
+    && typeof(VNC_frame_slice_str) !== 'undefined') {
+    VNC_frame_data_slice = decompress(VNC_frame_data_compressed, VNC_frame_data_size, VNC_frame_slice_str);
+    //console.info("length: " + VNC_frame_data_slice.length);
+  }
+
+  if (typeof(VNC_frame_data_slice) === 'undefined' || VNC_frame_data_slice.length === 0) {
+    console.info("exit for empty data, network issue or data broken.");
+    __finish();
+    return;
+  }
+
+  if (index !== 0) {
+    if (frame_idx >= curr_frame_length)
+      stopped_by_me = 1;
+  }
+
+  VNC_frame_data = VNC_frame_data.concat(VNC_frame_data_slice);
+  curr_frame_length = VNC_frame_data.length - 1;
+  VNC_frame_data_slice = undefined;
+  VNC_frame_data_size = undefined;
+  VNC_frame_data_compressed = undefined;
+
+  //console.info("data.length " + VNC_frame_data.length);
+  //console.info("curr_frame_length: " + curr_frame_length + " skipframes: " + skipframes);
+  //console.info("stopped_by_me " + stopped_by_me);
+  //console.info("frame_idx: " + frame_idx);
+
+  if (index === 0) {
+    start(0, 0, 'fullspeed');
+  } else if (stopped_by_me && !running()) {
+      stopped_by_me = 0;
+      resume_control();
+      restore();
+  }
+
+  next_data_slice = index + 1;
+  if (next_data_slice < frame_data_slices)
+    check_load_framedata();
+}
+
+function check_load_framedata() {
+  if (typeof(frame_idx) === 'undefined')
+    return;
+
+  if (curr_frame_length >= frame_length - 1)
+    return;
+
+  if (curr_frame_length <= skipframes || curr_frame_length <= frame_idx) {
+    load_framedata(next_data_slice);
+    return;
+  }
+
+  //console.info("frame_idx: " + frame_idx + " curr_frame_length: " + curr_frame_length);
+  if (frame_idx < curr_frame_length) {
+    var f, i, frame_timestamp, loaded_timestamp;
+  
+    f = VNC_frame_data[frame_idx];
+    i = f.indexOf('{', 1);
+    i = i < 0 ? f.indexOf('}', 1) : i;
+    frame_timestamp = f.slice(1, i);
+  
+    f = VNC_frame_data[curr_frame_length];
+    i = f.indexOf('{', 1);
+    i = i < 0 ? f.indexOf('}', 1) : i;
+    loaded_timestamp = f.slice(1, i);
+  
+    //console.info("frame_timestamp: " + frame_timestamp +
+    //  " loaded_timestamp: " + loaded_timestamp +
+    //  " diff: " + (loaded_timestamp - frame_timestamp));
+    i = loaded_timestamp - frame_timestamp - avail_timestamp;
+    if (i > 0) {
+      if (!running()) {
+        console.info("Exit loading checking");
+        return;
+     }
+  
+     setTimeout(check_load_framedata, 1000);
+     return;
+    }
+  }
+
+  load_framedata(next_data_slice);
+}
+
+function get_uri(fname, part) {
+  var uri;
+
+  //console.info("short_fname: " + short_fname + " fname: " + fname);
+  if (short_fname === fname)
+    uri = '' + INCLUDE_URI + record_dir + '/' + fname + "." + part;
+  else
+    uri = fname + "." + part;
+
+  return uri;
+}
+
+function load_framedata(part) {
+  if (typeof(part) === 'undefined')
+    part = next_data_slice;
+
+  uri = get_uri(fname, part);
+  if (uri === prev_uri) {
+    console.info("Ignore duplicated loading...");
+    return;
+  }
+
+  //console.info("data uri is " + uri);
+  window.asyncLoad(uri, handle_framedata, 120000);
+  prev_uri = uri;
+}
+
+function show_records_list() {
+  //console.info("show_records_list");
+  if (vnc_records.innerHTML.length < 10)
+    list_records();
+
+  var tmp = fullscreen_input && window.innerWidth < screen.width ? window.innerWidth : window.innerWidth - 30;
+  vnc_records.style.width = tmp + "px";
+  vnc_records.style.height = window.innerHeight + "px";
+  vnc_screen.style.display = "none";
+  vnc_records.style.display = "block";
+}
+
+window.onscriptsload = function () {
+  vnc_status.textContent = "Loaded";
+
+  if (fname)
+    init_framedata();
+  else
+    show_records_list();
+}
+
+function load_record(fname) {
+  short_fname = fname.replace(/^(ftp|http|https|file):.*\//,"");
+  vnc_status.textContent = "Loading ...";
+
+  if (first_load === 1) {
+    // Load supporting scripts
+    eval("WebUtil.load_scripts({'core': ['base64.js', 'websock.js', 'des.js', 'input/keysym.js', 'input/keysymdef.js', 'input/xtscancodes.js', 'input/util.js', 'input/devices.js', 'display.js', 'rfb.js', 'inflator.js'], 'playback': ['core.js', 'iframeResizer.contentWindow.min.js', 'load.js', 'records.js'], '" + record_dir + "': ['records.js', fname], });");
+  
+    first_load = 0;
+  } else {
+    //console.info("Reset and load a new data " + fname);
+    reset_framedata();
+    eval("WebUtil.load_scripts({'" + record_dir + "': [fname]});");
+  }
+
+  play_stats = playStats.LOADING;
+}
+
+// called in record list page while the record is choosed
+function load(index, suffix) {
+  var record = VNC_record_data;
+  var record_dir = VNC_record_dir;
+  // before append suffix, must remove the old prefix at first
+  if (typeof(suffix) === 'undefined')
+    fname = record[index][0];
+  else
+    fname = record[index][0] + suffix;
+
+  fname = fname.replace(/\/$/,"");
+
+  __finish();
+  //console.info("Loading ...... " + fname);
+  load_record(fname);
+}
+
+function arr2str(uint8array) {
+  var array = uint8array;
+
+  if (typeof(array.slice) === 'undefined')
+    array.slice = Array.prototype.slice;
+
+  var res = '';
+  var chunk = 8 * 1024;
+  var i;
+  for (i = 0; i < array.length / chunk; i++)
+    res += String.fromCharCode.apply(null, array.slice(i * chunk, (i + 1) * chunk));
+
+  res += String.fromCharCode.apply(null, array.slice(i * chunk));
+  return res;
+}
+
+function decompress(data, size, slice_str) {
+  var zlib = new Inflator.Inflate();
+
+  //console.info("base64 encoded data size: " + data.length);
+  var tmp = Base64.decode(data);
+  //console.info("compressed data size: " + tmp.length);
+  var tmp = zlib.inflate(tmp, true, size);
+  //console.info("decompressed data size: " + tmp.length);
+  zlib.reset();
+
+  return arr2str(tmp).split(slice_str);
+}
+
+function reset_framedata() {
+  VNC_frame_data = undefined;
+  VNC_frame_data = [];
+  VNC_frame_data_size = undefined;
+  VNC_frame_data_compressed = undefined;
+  VNC_frame_title = undefined;
+  VNC_frame_author = undefined;
+  VNC_frame_create = undefined;
+  VNC_frame_time = undefined;
+  VNC_frame_length = undefined;
+  VNC_frame_slice_str = undefined
+  VNC_frame_data_slice = undefined;
+  VNC_frame_slices = undefined;
+
+  start_disabled = false;
+  vnc_screen_disabled = false;
+
+  play_stats = playStats.INIT;
+  prev_play_stats = play_stats;
+  track_bar_stats = trackStats.INIT;
+  track_bar.value = 0;
+  prev_track_value = 0;
+  last_x = 0;
+  last_y = 0;
+
+  frame_idx = 0;
+  frame_length = 0;
+  frame_idx_max = 0;
+  frame_data_slices = 0;
+  skipframes = 0;
+  begin_frame = 0;
+
+  prev_canvas_height = default_canvas_height;
+  full_frame_found = 0;
+  full_frame_idx = 0;
+  full_frame_foffset = 0;
+  curr_frame_length = 0;
+
+  prev_uri = "";
+  next_data_slice = 0;
+  stopped_by_me = 0;
+  first_load = 0;
+
+  fs_cnt = 0;
+  prev_screen_width = 0;
+  prev_screen_height = 0;
+
+  frame_info = {'title':'unknown', 'author': 'unknown', 'create': 'unknown', 'time': '00:00:00', 'tags': 'unknown', 'desc': 'unknown'};
+}
+
+function init_framedata() {
+  var frame_time;
+
+  if (typeof(VNC_frame_data_compressed) !== 'undefined'
+    && typeof(VNC_frame_data_size) !== 'undefined'
+    && typeof(VNC_frame_slice_str) !== 'undefined')
+      VNC_frame_data = decompress(VNC_frame_data_compressed, VNC_frame_data_size, VNC_frame_slice_str);
+
+  if (typeof(VNC_frame_slices) !== 'undefined')
+    frame_data_slices = VNC_frame_slices;
+
+  if (typeof(VNC_frame_length) !== 'undefined')
+    frame_length = VNC_frame_length;
+  else
+    frame_length = VNC_frame_data.length;
+
+  curr_frame_length = frame_length;
+
+  if (typeof(VNC_frame_time) !== 'undefined') {
+    frame_time = VNC_frame_time;
+  } else {
+    var frame, i, idx, t;
+  
+    i = VNC_frame_data.length;
+    do {
+      i -= 1;
+      frame = VNC_frame_data[i];
+      idx = frame.indexOf('{', 1);
+    } while (idx < 0);
+  
+    t = frame.slice(1, idx);
+    frame_time = format_time(t);
+  }
+
+  ftime.textContent = '00:00:00';
+  ttime.textContent = frame_time;
+  VNC_frame_time = frame_time;
+
+  update_frameinfo();
+
+  frame_idx_max = frame_length - 2;
+  track_bar.max = frame_idx_max;
+  prev_track_value = frame_idx_max;
+
+  if (frame_data_slices)
+    load_framedata(0);
+  else
+    start(0, 0, 'fullspeed');
+}
+
+// Get query variables and do initialization
+iterations = 1;
+skipframes = 0;
+mode = 'realtime';
+frames_delta = parseInt(WebUtil.getQueryVar('delta', frames_delta));
+
+screen_width_input = parseInt(WebUtil.getQueryVar('width', 0));
+screen_height_input = parseInt(WebUtil.getQueryVar('height', 0));
+screen_ratio = parseFloat(WebUtil.getQueryVar('ratio', 16/9));
+
+update_screensize();
+
+fullscreen_input = 0;
+if (typeof(FULL_SCREEN) !== 'undefined' && FULL_SCREEN !== '')
+  fullscreen_input = FULL_SCREEN;
+
+fullscreen_input = WebUtil.getQueryVar('f', fullscreen_input);
+if (fullscreen_input === 0)
+  fullscreen_input = WebUtil.getQueryVar('fullscreen', 0);
+
+fullscreen_input = parseInt(fullscreen_input)
+
+if (typeof(RECORD_DIR) !== 'undefined' && RECORD_DIR !== '')
+  record_dir = RECORD_DIR;
+
+fname = null;
+if (typeof(DATA_URI) !== 'undefined' && DATA_URI !== '')
+  fname = DATA_URI;
+fname = WebUtil.getQueryVar('data', fname);
+
+if (fname) {
+  load_record(fname);
+} else {
+  load_records();
+  vnc_status.textContent = 'Must specify data=FOO in query string.';
+}
+
+more_btn.addEventListener('click', op_records, false);
+fs_btn.addEventListener('click', full_screen, false);
+
+track_bar.addEventListener('touchstart', track_stop, false);
+vnc_screen.addEventListener('touchstart', function(event) { track_stop(2, event); }, false);
+track_bar.addEventListener('mousedown', track_stop, false);
+vnc_screen.addEventListener('mousedown', function(event) { track_stop(1, event); }, false);
+track_bar.addEventListener('touchmove', track_move, false);
+vnc_screen.addEventListener('touchmove', function(event) { track_move(2, event); }, false);
+track_bar.addEventListener('mousemove', track_move, false);
+vnc_screen.addEventListener('mousemove', function(event) { track_move(1, event); }, false);
+track_bar.addEventListener('touchend', track_start, false);
+vnc_screen.addEventListener('touchend', function(event) { track_start(2, event); }, false);
+track_bar.addEventListener('mouseup', track_start, false);
+vnc_screen.addEventListener('mouseup', function(event) { track_start(1, event); }, false);
+vnc_screen.addEventListener('mouseout', function(event) { track_bar_stats = trackStats.INIT; }, false);
+
+window.onresize = function() {
+  check_fullscreen();
+
+  update_screensize();
+}
+
+window.onblur = function() {
+  if (!full_frame_found)
+    return;
+
+  if (frame_idx >= frame_idx_max)
+    return;
+
+  if (!(skipframes > frame_idx))
+    stop();
+}
