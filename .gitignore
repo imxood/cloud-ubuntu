@@ -3,5 +3,6 @@ Dockerfile
 feature
 container
 *_new*
-/noVNC
+recordings/
 jekyll-bootstrap
+*.pyc

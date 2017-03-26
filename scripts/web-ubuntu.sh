@@ -2,7 +2,7 @@
 #
 # web-ubuntu.sh
 #
-# 1. Record the screen session into noVNC/recordings/
+# 1. Record the screen session into recordings/:/noVNC/recordings
 #
 #    $ VNC_RECORD=1 ./scripts/web-ubuntu.sh
 #
@@ -22,7 +22,7 @@
 #    GATEONE_AUTH='pam' ./scripts/web-ubuntu.sh    # options: none, pam, ...
 #
 
-TOP_DIR=$(cd $(dirname $0) && pwd)/../
+TOP_DIR=$(cd $(dirname $0)/../ && pwd)
 
 source ${TOP_DIR}/config $* >/dev/null 2>&1
 
@@ -42,18 +42,20 @@ source ${TOP_DIR}/config $* >/dev/null 2>&1
 [ -z "$VNC_AUTH" ] && VNC_AUTH=""
 [ -z "$GATEONE_AUTH" ] && GATEONE_AUTH=""
 [ -z "$GATEONE_PUBLIC" ] && GATEONE_PUBLIC=""
+[ -z "$VNC_RECORDINGS" ] && VNC_RECORDINGS=recordings/
 
 if [ $VNC_RECORD -eq 1 -o $VNC_PLAYER -eq 1 ]; then
     VNC_MOUNT=1
 fi
 
 if [ $VNC_MOUNT -eq 1 ]; then
-    VNC_RECORD_DIR=/noVNC/recordings
-    VNC_RECORD_FILE=$VNC_RECORD_DIR/vnc.record.data
+    VNC_RECORD_DIR=$VNC_RECORDINGS
+    REMOTE_RECORD_DIR=/noVNC/recordings/
+    VNC_RECORD_FILE=$REMOTE_RECORD_DIR/vnc.record.data
     LOCAL_RECORD_DIR=$TOP_DIR/$VNC_RECORD_DIR
     [ ! -d $LOCAL_RECORD_DIR ] && mkdir -p $LOCAL_RECORD_DIR
-    VOLUME_MAP=" -v $LOCAL_RECORD_DIR:$VNC_RECORD_DIR "
-    echo "LOG: VNC screen recorded in $VNC_RECORD_DIR"
+    VOLUME_MAP=" -v $LOCAL_RECORD_DIR:$REMOTE_RECORD_DIR "
+    echo "LOG: VNC screen recorded in $LOCAL_RECORD_DIR"
 fi
 
 EXTRA_ARGS="$EXTRA_ARGS -e PROXY_SPEED_LIMIT=0 -e NOSSL=$NOSSL"
