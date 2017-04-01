@@ -42,7 +42,7 @@ source ${TOP_DIR}/config $* >/dev/null 2>&1
 [ -z "$VNC_AUTH" ] && VNC_AUTH=""
 [ -z "$GATEONE_AUTH" ] && GATEONE_AUTH=""
 [ -z "$GATEONE_PUBLIC" ] && GATEONE_PUBLIC=""
-[ -z "$VNC_RECORDINGS" ] && VNC_RECORDINGS=recordings/
+[ -z "$VNC_RECORDINGS" ] && VNC_RECORDINGS=${TOP_DIR}/recordings/
 
 if [ $VNC_RECORD -eq 1 -o $VNC_PLAYER -eq 1 ]; then
     VNC_MOUNT=1
@@ -52,7 +52,7 @@ if [ $VNC_MOUNT -eq 1 ]; then
     VNC_RECORD_DIR=$VNC_RECORDINGS
     REMOTE_RECORD_DIR=/noVNC/recordings/
     VNC_RECORD_FILE=$REMOTE_RECORD_DIR/vnc.record.data
-    LOCAL_RECORD_DIR=$TOP_DIR/$VNC_RECORD_DIR
+    LOCAL_RECORD_DIR=$VNC_RECORD_DIR
     [ ! -d $LOCAL_RECORD_DIR ] && mkdir -p $LOCAL_RECORD_DIR
     VOLUME_MAP=" -v $LOCAL_RECORD_DIR:$REMOTE_RECORD_DIR "
     echo "LOG: VNC screen recorded in $LOCAL_RECORD_DIR"
