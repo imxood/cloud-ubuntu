@@ -24,7 +24,7 @@ try:
 except:
     from cgi import parse_qs
     from urlparse import urlparse
-from records import *
+from vtools.records import *
 
 # Imports that vary by python version
 
