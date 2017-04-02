@@ -1,6 +1,7 @@
 [submodule "system/web/noVNC/vplayer"]
 	path = system/web/noVNC/vplayer
 	url = https://github.com/tinyclub/vplayer.io
+        branch = gh-pages
 [submodule "system/web/noVNC/utils/websockify/websockify/vtools"]
 	path = system/web/noVNC/utils/websockify/websockify/vtools
 	url = https://github.com/tinyclub/vtools.git
