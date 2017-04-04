@@ -15,6 +15,8 @@
     * http://kolber.github.io/audiojs/
     * http://www.cnblogs.com/dragondean/p/jquery-audioplayer-js.html
     * https://msdn.microsoft.com/zh-cn/library/gg589529(v=vs.85).aspx
+    * Live stream audio: SHOUTcast, RTMP,RTSP,HLS
+    * HLS，http://www.cnblogs.com/haibindev/archive/2013/01/30/2880764.html
 12. Add data compress with base64+lz4/decompress support for big data, python code...
     TODO: check the size diff between base64 and binary encoding
 13. Add data compress support for splitted big data, python code...
