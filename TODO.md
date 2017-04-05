@@ -17,6 +17,7 @@
     * https://msdn.microsoft.com/zh-cn/library/gg589529(v=vs.85).aspx
     * Live stream audio: SHOUTcast, RTMP,RTSP,HLS
     * HLS，http://www.cnblogs.com/haibindev/archive/2013/01/30/2880764.html
+    * https://www.sitepoint.com/10-jquery-html5-audio-players/
 12. Add data compress with base64+lz4/decompress support for big data, python code...
     TODO: check the size diff between base64 and binary encoding
 13. Add data compress support for splitted big data, python code...
@@ -30,3 +31,6 @@
     The play/ directory still need to be re-organized for theme support.
     This is required for the iframe embedded feature, to suitable for variable styles' of target sites.
 20. Add Cloud-Ubuntu-ARM/MIPS/PowerPC, see https://hub.docker.com/r/inaz2/debian-powerpc/, Required for a realy new full architecture learning env
+21. Use libav-tools to record the desktop and use http://www.mediaelementjs.com/, https://github.com/mediaelement/mediaelement to replay it.
+    https://linux.cn/article-4323-1.html
+    avconv -f alsa -i hw:0 -f x11grab -r 25 -s 1280x666 -i :0.0 -vcodec libx264 -threads 4 $HOME/output.mp4
