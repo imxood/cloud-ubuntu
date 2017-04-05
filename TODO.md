@@ -29,3 +29,4 @@
 19. Add theme support, allow to choose theme via "theme=" arguments, theme mainly include the .css
     The play/ directory still need to be re-organized for theme support.
     This is required for the iframe embedded feature, to suitable for variable styles' of target sites.
+20. Add Cloud-Ubuntu-ARM/MIPS/PowerPC, see https://hub.docker.com/r/inaz2/debian-powerpc/, Required for a realy new full architecture learning env
