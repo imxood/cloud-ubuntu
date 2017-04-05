@@ -34,3 +34,5 @@
 21. Use libav-tools to record the desktop and use http://www.mediaelementjs.com/, https://github.com/mediaelement/mediaelement to replay it.
     https://linux.cn/article-4323-1.html
     avconv -f alsa -i hw:0 -f x11grab -r 25 -s 1280x666 -i :0.0 -vcodec libx264 -threads 4 $HOME/output.mp4
+    avconv -f alsa -i hw:0 out.wav
+    avconv -f x11grab -r 1 -s 1280x666 -i :0.0 -pix_fmt rgb24 -threads 4 $HOME/output.gif
